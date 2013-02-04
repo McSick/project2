@@ -1,0 +1,24 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-279.19.1.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+make lab4
+# if [ ! -d ./work ]; then vlib ./work; fi
+# vcom -93 ./source/tb_cpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity tb_cpu
+# -- Compiling architecture tb_arch of tb_cpu
+submit -p lab4
+# logging into shay to submit
+# Compressing submitted files... please wait
+# Your files have been submitted to ece437l, lab4 for grading.
