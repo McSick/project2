@@ -48,15 +48,15 @@ Z15 F/home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
 l0
 L5
 V`L7Oz_Vd]S>hD^G3fmGo52
-!s100 31[JAa16lVmmKo:F?`Oba2
 R7
 32
-!i10b 1
 Z16 !s108 1360100337.986073
 Z17 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd|
 Z18 !s107 /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd|
 R11
 R12
+!s100 31[JAa16lVmmKo:F?`Oba2
+!i10b 1
 Abehavioral
 R2
 R3
@@ -64,12 +64,49 @@ DEx4 work 10 memcontrol 0 22 `L7Oz_Vd]S>hD^G3fmGo52
 l42
 L33
 VTdofAWA0jkA]dGhWgQM=F2
-!s100 n]o8_f3ADC[iI?Yeh0lNV3
 R7
 32
-!i10b 1
 R16
 R17
 R18
+R11
+R12
+!s100 n]o8_f3ADC[iI?Yeh0lNV3
+!i10b 1
+Epipelinecontroller
+Z19 w1360101988
+Z20 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z21 8/home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+Z22 F/home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+l0
+L5
+VO`R_a:R:M@FPQ>]]TjgnN3
+!s100 m0S>ZfBi3A5bdozbn]7Y21
+R7
+32
+!i10b 1
+Z23 !s108 1360101989.712711
+Z24 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd|
+Z25 !s107 /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd|
+R11
+R12
+Abehavioral
+R20
+R2
+R3
+DEx4 work 18 pipelinecontroller 0 22 O`R_a:R:M@FPQ>]]TjgnN3
+l32
+L16
+VDO_SWjGIKF;EX>jh8l:3j3
+!s100 lD9;a7XNe;EZTmHl98i8G1
+R7
+32
+!i10b 1
+R23
+R24
+R25
 R11
 R12

@@ -153,3 +153,19 @@ vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source
 # -- Loading package std_logic_1164
 # -- Compiling entity MemControl
 # -- Compiling architecture behavioral of MemControl
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipelinecontroller
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd(13): near ")": expecting FUNCTION or PROCEDURE or IMPURE or PURE
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipelinecontroller
+# -- Compiling architecture Behavioral of pipelinecontroller

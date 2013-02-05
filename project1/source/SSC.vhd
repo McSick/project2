@@ -2,32 +2,37 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.NUMERIC_STD.all;
 
-entity SSC is
+entity pipelinecontroller is
   port(
-    opcode : in std_logic_vector(5 downto 0);
-    funct : in std_logic_vector(5 downto 0);
-    ExtType : out std_logic;
-    WriteEnable : out std_logic;
-    RegDst : out std_logic;
-    AluSrc : out std_logic;
-    ALU_cntrl : out std_logic_vector(2 downto 0);
-    MemWrite : out std_logic; 
-    MemOut : out std_logic;
-    Branch : out std_logic;
-    Jump : out std_logic;
-    BNE : out std_logic;
-    LUI : out std_logic
-  
+    signal ExtType : out std_logic;
+    signal EXC : out std_logic_vector(4 downto 0);
+    signal MEMC : out std_logic_vector(4 downto 0);
+    signal WBC : out std_logic_vector(1 downto 0);
+  signal opcode :  in std_logic_vector(5 downto 0);
+  signal  funct :  in std_logic_vector(5 downto 0);
   );
-end SSC;
+end pipelinecontroller;
 
-architecture Behavioral of SSC is
-
+architecture Behavioral of pipelinecontroller is
+  
+   
+  signal WriteEnable :  std_logic;
+   signal RegDst :  std_logic;
+   signal AluSrc :  std_logic;
+  signal  ALU_cntrl :  std_logic_vector(2 downto 0);
+  signal  MemWrite :  std_logic; 
+  signal  MemOut :  std_logic;
+  signal MemRead : std_logic;
+  signal  Branch :  std_logic;
+  signal  Jump :  std_logic;
+  signal  BNE :  std_logic;
+  signal  LUI :  std_logic;
 
 
 begin
  
- 
+ EXC <= RegDst & AluSrc & ALU_cntrl;
+ MEMC <= Branch & BNE &  MemWrite & MemRead & Jump
  OpSelect : process(opcode,funct)
  begin
    --1 when signed
@@ -53,7 +58,8 @@ begin
     BNE <= '0';
    --Load upper immediate
    LUI <= '0';
-
+   --1 when writing reading from memory
+    MemRead <= '0';
     
       case opcode is
         --Special Function
@@ -139,6 +145,7 @@ begin
         MemOut <= '0';
         WriteEnable <= '1';
         RegDst <= '0';
+        MemRead <= '1';
       
         
       --ORI
