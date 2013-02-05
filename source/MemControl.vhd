@@ -51,7 +51,7 @@ begin
   address <= PC(15 downto 0);
   data <= PC;
   wrenO <= '0';
-  rdenO <= '1';
+  rdenO <= '0';
   
   
     case memstate is
@@ -72,7 +72,7 @@ begin
           wrenO <= wren;
           rdenO <= rden;
     
-          stall <= '1';
+
       end if; 
       stall <= '1';
   when MEMACCESS =>
@@ -80,11 +80,12 @@ begin
           address <= Daddress (15 downto 0);
           data <= writeData;
           wrenO <= wren;
-          rden0 <= rden;
+          rdenO <= rden;
        
  
       end if; 
     when MEMERROR =>
+    when OTHERS =>
 
  
 end case;

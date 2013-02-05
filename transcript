@@ -126,3 +126,30 @@ vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source
 # ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): (vcom-1136) Unknown identifier "rden0".
 # ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(57): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
 # ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(96): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(57): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(96): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(57): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(96): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
