@@ -1,0 +1,59 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/ecegrid/a/mg204/ece437/project2
+Eicache
+Z1 w1360015401
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/home/ecegrid/a/mg204/ece437/project2
+Z5 8/home/ecegrid/a/mg204/ece437/project2/source/icache.vhd
+Z6 F/home/ecegrid/a/mg204/ece437/project2/source/icache.vhd
+l0
+L8
+VHP=hd[BZ4?^]h=bNn]>;92
+Z7 OL;C;10.1b;51
+32
+Z8 !s108 1360100018.916460
+Z9 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg204/ece437/project2/source/icache.vhd|
+Z10 !s107 /home/ecegrid/a/mg204/ece437/project2/source/icache.vhd|
+Z11 o-work work
+Z12 tExplicit 1
+!s100 ^@hhkaem689EAcC0D`gHn1
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 6 icache 0 22 HP=hd[BZ4?^]h=bNn]>;92
+l27
+L26
+V8b01833`dBeNZRkMk==G61
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 bQg8lgOF[;XKWYaH[o2nd2
+!i10b 1
+Ememcontrol
+w1360100030
+R2
+R3
+R4
+8/home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+F/home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+l0
+L5
+V`L7Oz_Vd]S>hD^G3fmGo52
+!s100 31[JAa16lVmmKo:F?`Oba2
+R7
+32
+!i10b 1
+!s108 1360100035.031018
+!s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd|
+!s107 /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd|
+R11
+R12
