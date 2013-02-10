@@ -1,0 +1,386 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-279.19.1.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim work.a32bitaddr
+# vsim work.a32bitaddr 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.a32bitaddr(combinational)#1
+add wave -position insertpoint  \
+sim:/a32bitaddr/A \
+sim:/a32bitaddr/B \
+sim:/a32bitaddr/SUM \
+sim:/a32bitaddr/V \
+sim:/a32bitaddr/couts \
+sim:/a32bitaddr/internal_sum
+run 1000 ns
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitsubr.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity a32bitsubr
+# -- Compiling architecture COMBINATIONAL of a32bitsubr
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(27): Labels do not match: 'println' and 'printlv'.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(30): (vcom-1141) Identifier "a32bitaddr" does not identify a component declaration.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(40): String literal has a character 'S' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(49): near "EOF": syntax error
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity a32bitaddr
+# -- Compiling architecture COMBINATIONAL of a32bitaddr
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(27): Labels do not match: 'println' and 'printlv'.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(30): (vcom-1141) Identifier "a32bitaddr" does not identify a component declaration.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(40): String literal has a character 'S' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(49): near "EOF": syntax error
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# -- Compiling entity a32bitaddr_tb
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# ** Warning: (vcom-6) -- Waiting for lock by "mg204@cparch10.ecn.purdue.edu, pid = 13694". Lockfile is "/home/ecegrid/a/mg204/ece437/project1/source/work/_lock".
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(27): Labels do not match: 'println' and 'printlv'.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(30): (vcom-1141) Identifier "a32bitaddr" does not identify a component declaration.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(39): String literal has a character 'S' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(48): near "EOF": syntax error
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(27): Labels do not match: 'println' and 'printlv'.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(30): (vcom-1141) Identifier "a32bitaddr" does not identify a component declaration.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(39): String literal has a character 'S' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(48): near "EOF": syntax error
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(27): Labels do not match: 'println' and 'printlv'.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(30): (vcom-1141) Identifier "a32bitaddr" does not identify a component declaration.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(47): near "EOF": syntax error
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(25): (vcom-1141) Identifier "a32bitaddr" does not identify a component declaration.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(42): near "EOF": syntax error
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(42): near "EOF": syntax error
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(42): near "testbench_arch": expecting PROCESS
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+vsim work.a32bitaddr_tb
+# vsim work.a32bitaddr_tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.a32bitaddr_tb(testbench_arch)#1
+add wave -position insertpoint  \
+sim:/a32bitaddr_tb/A \
+sim:/a32bitaddr_tb/B \
+sim:/a32bitaddr_tb/SUM
+run 100 ns
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(37): (vcom-1272) Length of expected is 32; length of actual is 4.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(38): (vcom-1272) Length of expected is 32; length of actual is 4.
+# ** Error: /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd(43): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# Optimization canceled
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.a32bitaddr_tb(testbench_arch)#1
+run 100 ns
+vsim work.a32bitaddr_tb
+# vsim work.a32bitaddr_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.a32bitaddr_tb(testbench_arch)#1
+# **** Error: ContextQ cmd: namespace inscope ::vsimwidgets::Srcedit {::.main_pane.source3.interior.cs.body.editor ContextChangeCB} sim
+# ****        window ".main_pane.source3" isn't a top-level window
+# window ".main_pane.source3" isn't a top-level window
+#     while executing
+# "::tk::wm title .main_pane.source3 /home/ecegrid/a/mg204/ece437/project1/source/registerFile_tb.vhd"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 [concat [list ::tk::wm $option $window] $args]"
+#     ("default" arm line 2)
+#     invoked from within
+# "switch -- $option {
+# 			manage {
+# 				if {$::tk_version eq "8.5"} {
+# 					uplevel 1 [concat [list ::tk::wm $option $window] $args]
+# 				} elseif {$::tk_ve..."
+#     (procedure "::Tcl::wm" line 19)
+#     invoked from within
+# "::Tcl::wm title .main_pane.source3 /home/ecegrid/a/mg204/ece437/project1/source/registerFile_tb.vhd"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::Tcl::wm $option $window $args"
+#     (procedure "wm" line 21)
+#     invoked from within
+# "wm title $frame_name $itk_option(-title)"
+#     (object "::.main_pane.source3" method "::mtiwidgets::WindowObj::Title" body line 17)
+#     invoked from within
+# "Title"
+#     (object "::.main_pane.source3" method "::mtiwidgets::WindowObj::UpdateText" body line 9)
+#     invoked from within
+# "$windowobj UpdateText"
+#     (object "::.main_pane.source3.interior.cs.body.editor" method "::vsimwidgets::Srcedit::updateTitle" body line 37)
+#     invoked from within
+# "updateTitle $filename"
+#     (object "::.main_pane.source3.interior.cs.body.editor" method "::vsimwidgets::Srcedit::ContextChangeCB" body line 11)
+#     invoked from within
+# "::.main_pane.source3.interior.cs.body.editor ContextChangeCB sim"
+#     (in namespace inscope "::vsimwidgets::Srcedit" script line 1)
+#     invoked from within
+# "namespace inscope ::vsimwidgets::Srcedit {::.main_pane.source3.interior.cs.body.editor ContextChangeCB} sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# ** Warning: (vcom-6) -- Waiting for lock by "mg204@cparch10.ecn.purdue.edu, pid = 13879". Lockfile is "/home/ecegrid/a/mg204/ece437/project1/source/work/_lock".
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+vsim work.a32bitaddr_tb
+# vsim work.a32bitaddr_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.a32bitaddr_tb(testbench_arch)#1
+# **** Error: ContextQ cmd: namespace inscope ::vsimwidgets::Srcedit {::.main_pane.source3.interior.cs.body.editor ContextChangeCB} sim
+# ****        window ".main_pane.source3" isn't a top-level window
+# window ".main_pane.source3" isn't a top-level window
+#     while executing
+# "::tk::wm title .main_pane.source3 /home/ecegrid/a/mg204/ece437/project1/source/registerFile_tb.vhd"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 [concat [list ::tk::wm $option $window] $args]"
+#     ("default" arm line 2)
+#     invoked from within
+# "switch -- $option {
+# 			manage {
+# 				if {$::tk_version eq "8.5"} {
+# 					uplevel 1 [concat [list ::tk::wm $option $window] $args]
+# 				} elseif {$::tk_ve..."
+#     (procedure "::Tcl::wm" line 19)
+#     invoked from within
+# "::Tcl::wm title .main_pane.source3 /home/ecegrid/a/mg204/ece437/project1/source/registerFile_tb.vhd"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 ::Tcl::wm $option $window $args"
+#     (procedure "wm" line 21)
+#     invoked from within
+# "wm title $frame_name $itk_option(-title)"
+#     (object "::.main_pane.source3" method "::mtiwidgets::WindowObj::Title" body line 17)
+#     invoked from within
+# "Title"
+#     (object "::.main_pane.source3" method "::mtiwidgets::WindowObj::UpdateText" body line 9)
+#     invoked from within
+# "$windowobj UpdateText"
+#     (object "::.main_pane.source3.interior.cs.body.editor" method "::vsimwidgets::Srcedit::updateTitle" body line 37)
+#     invoked from within
+# "updateTitle $filename"
+#     (object "::.main_pane.source3.interior.cs.body.editor" method "::vsimwidgets::Srcedit::ContextChangeCB" body line 11)
+#     invoked from within
+# "::.main_pane.source3.interior.cs.body.editor ContextChangeCB sim"
+#     (in namespace inscope "::vsimwidgets::Srcedit" script line 1)
+#     invoked from within
+# "namespace inscope ::vsimwidgets::Srcedit {::.main_pane.source3.interior.cs.body.editor ContextChangeCB} sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+rm work
+# /bin/rm: cannot remove `work': Is a directory
+rm -rf work
+mkdir work
+vlib work
+# ** Error: (vlib-35) Failed to create directory "work".
+# File exists. (errno = EEXIST)
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a1bitaddr.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity a1bitaddr
+# -- Compiling architecture COMBINATIONAL of a1bitaddr
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity a32bitaddr
+# -- Compiling architecture COMBINATIONAL of a32bitaddr
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a1bitaddr.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity a1bitaddr
+# -- Compiling architecture COMBINATIONAL of a1bitaddr
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity a32bitaddr
+# -- Compiling architecture COMBINATIONAL of a32bitaddr
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitaddr_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Compiling entity a32bitaddr_tb
+# -- Compiling architecture testbench_arch of a32bitaddr_tb
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/a32bitsubr.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity a32bitsubr
+# -- Compiling architecture COMBINATIONAL of a32bitsubr
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/registerFile.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registerFile
+# -- Compiling architecture regfile_arch of registerFile
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project1/source/registerFile_tb.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity registerFile_tb
+# -- Compiling architecture testbench_arch of registerFile_tb
+vcom -reportprogress 30 -work work /home/ecegrid/a/mg204/ece437/project1/source/regTest.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity regTest
+# -- Compiling architecture behav of regTest
+# ** Warning: (vsim-31) Unable to unlink file "/home/ecegrid/a/mg204/ece437/project1/source/work/_opt1__lock".
+# No such file or directory. (errno = ENOENT)

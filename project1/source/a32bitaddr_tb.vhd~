@@ -1,0 +1,94 @@
+library ieee;
+use IEEE.STD_LOGIC_TEXTIO.all;
+use STD.TEXTIO.all;
+use ieee.std_logic_1164.all;
+
+use ieee.std_logic_arith.all;
+
+
+entity a32bitaddr_tb is
+end a32bitaddr_tb;
+
+architecture testbench_arch of a32bitaddr_tb is
+	component a32bitaddr_tb
+		port( A : in std_logic_vector(31 downto 0);
+	      B : in std_logic_vector(31 downto 0);
+	      SUM : out std_logic_vector(31 downto 0);
+	      V : out std_logic);
+	end component;
+	signal A,B,SUM : std_logic_vector(31 downto 0);
+	signal V : std_logic;
+
+procedure printlv( output_bv : in std_logic_vector ) is
+    variable lout              :    line;
+  begin
+    WRITE(lout, output_bv);
+    WRITELINE(OUTPUT, lout);
+  end printlv;
+begin
+	
+	DUT : a32bitaddr
+		port map(
+			A => A,
+			B => B,
+			SUM => SUM,
+			V => V);
+
+	process
+	begin
+    println("");
+    println("Starting Test");
+	A <= (others => '0');
+	B <= (others => '0');
+	wait for 10 ns;
+	if( (SUM = conv_std_logic_vector(0, 32)) AND (V = '0')) then
+		println("PASSED : 0 + 0 is 0");
+	else
+		println("FAILED : EXPECTING 0 for 0 + 0");
+		println("received for SUM: ");
+		println(SUM);
+		println("received for V: ");
+		println(V);
+	end
+	wait for 10 ns;
+	A <= conv_std_logic_vector(10, 32);
+	B <= conv_std_logic_vector(115, 32);
+	wait for 10 ns;
+	if( (SUM = conv_std_logic_vector(125, 32)) AND (V = '0')) then
+		println("PASSED : 10 + 115 is 125");
+	else
+		println("FAILED : EXPECTING 125 for 10 + 115");
+		println("received for SUM: ");
+		println(SUM);
+		println("received for V: ");
+		println(V);
+	end
+	wait for 10 ns;
+	A <= conv_std_logic_vector(-10, 32);
+	B <= conv_std_logic_vector(115, 32);
+	wait for 10 ns;
+	if( (SUM = conv_std_logic_vector(105, 32)) AND (V = '0')) then
+		println("PASSED : -10 + 115 is 105");
+	else
+		println("FAILED : EXPECTING 105 for -10 + 115");
+		println("received for SUM: ");
+		println(SUM);
+		println("received for V: ");
+		println(V);
+	end
+	A <= conv_std_logic_vector(2147483647, 32);
+	B <= conv_std_logic_vector(1, 32);
+	wait for 10 ns;
+	if( (V = '1')) then
+		println("PASSED : OVERFLOW");
+	else
+		println("FAILED : OVERFLOW");
+		println("received for SUM: ");
+		println(SUM);
+		println("received for V: ");
+		println(V);
+	end
+
+
+		
+		

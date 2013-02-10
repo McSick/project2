@@ -8,11 +8,174 @@
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
 vlib work
+<<<<<<< HEAD
 vcom source/alu.vhd
+=======
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+>>>>>>> origin/master
 # Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+<<<<<<< HEAD
 # -- Compiling entity alu
 # -- Compiling architecture behav of alu
 exit
+=======
+# -- Compiling entity MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(15): (vcom-1136) Unknown identifier "std_logic_vecotr".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(17): near "in": expecting ':'
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(17): near "in": expecting ':'
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(25): near "std_logic_": Identifier may not end with an underline.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(25): (vcom-1136) Unknown identifier "std_logic_".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(26): near "std_logic_": Identifier may not end with an underline.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(26): (vcom-1136) Unknown identifier "std_logic_".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(32): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(42): near "previnst": expecting BEGIN
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(63): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(63): (vcom-1136) Unknown identifier "wrenO".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(73): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(73): (vcom-1136) Unknown identifier "wrenO".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): (vcom-1136) Unknown identifier "wrenO".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(58): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(97): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(54): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(54): (vcom-1136) Unknown identifier "wrdenO".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(58): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(97): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(58): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(97): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(58): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(97): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/icache.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity icache
+# -- Compiling architecture struct of icache
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(57): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(96): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): Illegal target for signal assignment.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): (vcom-1136) Unknown identifier "rden0".
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(57): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(96): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(57): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(96): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemControl
+# -- Compiling architecture behavioral of MemControl
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipelinecontroller
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd(13): near ")": expecting FUNCTION or PROCEDURE or IMPURE or PURE
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipelinecontroller
+# -- Compiling architecture Behavioral of pipelinecontroller
+>>>>>>> origin/master

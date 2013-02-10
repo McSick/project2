@@ -1,0 +1,24 @@
+Structural
+	two instructions need same hardware.
+	I.e. get instruction from memory, save to memory
+
+
+
+Data
+	Example, Need value of register before its calculated.
+	i.e.
+	add r1,r2,r3
+	sub r4,r1,r3
+	and r6,r1,r7
+		
+
+
+
+Control
+	Example, A branch-Should we still execute next instructions or branch and execute?
+	i.e.
+	add r1,r2,r3
+	beq r1,r2,location
+	someinst
+	
+
