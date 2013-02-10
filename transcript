@@ -7,175 +7,1501 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# ** Error: Library work not found.
+# ** Error: VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
 vlib work
-<<<<<<< HEAD
-vcom source/alu.vhd
-=======
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
->>>>>>> origin/master
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-<<<<<<< HEAD
-# -- Compiling entity alu
-# -- Compiling architecture behav of alu
-exit
-=======
-# -- Compiling entity MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(15): (vcom-1136) Unknown identifier "std_logic_vecotr".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(17): near "in": expecting ':'
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(17): near "in": expecting ':'
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(25): near "std_logic_": Identifier may not end with an underline.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(25): (vcom-1136) Unknown identifier "std_logic_".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(26): near "std_logic_": Identifier may not end with an underline.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(26): (vcom-1136) Unknown identifier "std_logic_".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(32): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# -- Compiling architecture behavioral of MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(42): near "previnst": expecting BEGIN
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# -- Compiling architecture behavioral of MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(63): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(63): (vcom-1136) Unknown identifier "wrenO".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(73): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(73): (vcom-1136) Unknown identifier "wrenO".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): (vcom-1136) Unknown identifier "wrenO".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(58): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(97): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# -- Compiling architecture behavioral of MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(54): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(54): (vcom-1136) Unknown identifier "wrdenO".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(58): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(97): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# -- Compiling architecture behavioral of MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(64): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(58): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(97): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# -- Compiling architecture behavioral of MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(74): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(84): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(58): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(97): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/icache.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity icache
-# -- Compiling architecture struct of icache
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# -- Compiling architecture behavioral of MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(57): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(96): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# -- Compiling architecture behavioral of MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): Illegal target for signal assignment.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(83): (vcom-1136) Unknown identifier "rden0".
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(57): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(96): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# -- Compiling architecture behavioral of MemControl
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(57): (vcom-1339) Case statement choices cover only 4 out of 81 cases.
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd(96): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/MemControl.vhd
-# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MemControl
-# -- Compiling architecture behavioral of MemControl
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+# ** Error: (vlib-35) Failed to create directory "work".
+# File exists. (errno = EEXIST)
+ls
+# aluTest.pins
+# asmFiles
+# hazards
+# Makefile
+# mapped
+# modelsim.ini
+# project1
+# README
+# README~
+# scripts
+# source
+# transcript
+# work
+vcom source/mycpu.vhd
 # Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity pipelinecontroller
-# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd(13): near ")": expecting FUNCTION or PROCEDURE or IMPURE or PURE
-vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(168): near "signal": expecting ':'
+# ** Error: source/mycpu.vhd(179): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(181): (vcom-1141) Identifier "PipelineController" does not identify a component declaration.
+# ** Error: source/mycpu.vhd(200): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(203): (vcom-1136) Unknown identifier "ALUout_stg5".
+# ** Error: source/mycpu.vhd(203): (vcom-1136) Unknown identifier "MemoryData_stg5".
+# ** Error: source/mycpu.vhd(206): (vcom-1136) Unknown identifier "Instruction_stg5".
+# ** Error: source/mycpu.vhd(206): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: source/mycpu.vhd(209): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(209): (vcom-1136) Unknown identifier "NextPC".
+# ** Error: source/mycpu.vhd(209): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(211): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(211): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(211): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(211): Bad expression in left operand of infix expression "or".
+# ** Error: source/mycpu.vhd(211): Bad expression in right operand of infix expression "or".
+# ** Error: source/mycpu.vhd(211): Cannot resolve expression type.
+# ** Error: source/mycpu.vhd(212): Enumeration literal '1' is not of type (error).
+# ** Error: source/mycpu.vhd(212): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(215): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(215): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(215): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(215): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(215): Signal "BranchAddress" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type (error).
+# ** Error: source/mycpu.vhd(219): (vcom-1136) Unknown identifier "Instruction_stg5".
+# ** Error: source/mycpu.vhd(219): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(257): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(257): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(257): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(261): (vcom-1136) Unknown identifier "nextPC".
+# ** Error: source/mycpu.vhd(265): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(265): Expression is not a signal.
+# ** Error: source/mycpu.vhd(265): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(265): Expression is not a signal.
+# ** Error: source/mycpu.vhd(271): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(271): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(271): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(283): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(283): Expression is not a signal.
+# ** Error: source/mycpu.vhd(283): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(283): Expression is not a signal.
+# ** Error: source/mycpu.vhd(288): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(288): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(289): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(290): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(291): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(294): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(294): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(294): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(298): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(298): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(299): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(300): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(301): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(307): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(307): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(316): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(316): Expression is not a signal.
+# ** Error: source/mycpu.vhd(316): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(316): Expression is not a signal.
+# ** Error: source/mycpu.vhd(319): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(320): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(320): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(322): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(322): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(324): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(324): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(326): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(326): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(326): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(328): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(328): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(329): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(330): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(330): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(332): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(332): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(336): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(336): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(337): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(337): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(339): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(339): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(344): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(344): Expression is not a signal.
+# ** Error: source/mycpu.vhd(344): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(344): Expression is not a signal.
+# ** Error: source/mycpu.vhd(347): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(348): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(348): (vcom-1136) Unknown identifier "MemoryData_stg5".
+# ** Error: source/mycpu.vhd(349): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(349): (vcom-1136) Unknown identifier "ALUout_stg5".
+# ** Error: source/mycpu.vhd(350): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(350): (vcom-1136) Unknown identifier "Instruction_stg5".
+# ** Error: source/mycpu.vhd(351): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(351): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(352): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(352): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(352): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(354): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(354): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(355): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(355): (vcom-1136) Unknown identifier "MemoryData_stg5".
+# ** Error: source/mycpu.vhd(356): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(356): (vcom-1136) Unknown identifier "ALUout_stg5".
+# ** Error: source/mycpu.vhd(357): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(357): (vcom-1136) Unknown identifier "Instruction_stg5".
+# ** Error: source/mycpu.vhd(358): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(358): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(360): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(360): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(361): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(361): (vcom-1136) Unknown identifier "MemoryData_stg5".
+# ** Error: source/mycpu.vhd(362): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(362): (vcom-1136) Unknown identifier "Instruction_stg5".
+# ** Error: source/mycpu.vhd(363): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(363): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(369): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(372): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(373): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(374): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(374): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(375): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(376): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(383): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(383): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: [14] source/mycpu.vhd(286): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(287): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(296): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(297): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Error: source/mycpu.vhd(385): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
 # Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity pipelinecontroller
-# -- Compiling architecture Behavioral of pipelinecontroller
->>>>>>> origin/master
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(166): near ";": expecting ':'
+# ** Error: source/mycpu.vhd(179): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(181): (vcom-1141) Identifier "PipelineController" does not identify a component declaration.
+# ** Error: source/mycpu.vhd(200): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(209): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(209): (vcom-1136) Unknown identifier "NextPC".
+# ** Error: source/mycpu.vhd(209): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(211): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(211): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(211): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(211): Bad expression in left operand of infix expression "or".
+# ** Error: source/mycpu.vhd(211): Bad expression in right operand of infix expression "or".
+# ** Error: source/mycpu.vhd(211): Cannot resolve expression type.
+# ** Error: source/mycpu.vhd(212): Enumeration literal '1' is not of type (error).
+# ** Error: source/mycpu.vhd(212): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(215): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(215): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(215): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(215): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(215): Signal "BranchAddress" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type (error).
+# ** Error: source/mycpu.vhd(257): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(257): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(257): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(261): (vcom-1136) Unknown identifier "nextPC".
+# ** Error: source/mycpu.vhd(265): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(265): Expression is not a signal.
+# ** Error: source/mycpu.vhd(265): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(265): Expression is not a signal.
+# ** Error: source/mycpu.vhd(271): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(271): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(271): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(283): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(283): Expression is not a signal.
+# ** Error: source/mycpu.vhd(283): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(283): Expression is not a signal.
+# ** Error: source/mycpu.vhd(288): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(288): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(289): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(290): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(291): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(294): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(294): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(294): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(298): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(298): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(299): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(300): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(301): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(307): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(307): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(316): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(316): Expression is not a signal.
+# ** Error: source/mycpu.vhd(316): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(316): Expression is not a signal.
+# ** Error: source/mycpu.vhd(319): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(320): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(320): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(322): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(322): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(324): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(324): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(326): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(326): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(326): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(328): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(328): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(329): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(330): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(330): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(332): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(332): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(336): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(336): (vcom-1136) Unknown identifier "zero_stg4".
+# ** Error: source/mycpu.vhd(337): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(337): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(339): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(339): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(344): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(344): Expression is not a signal.
+# ** Error: source/mycpu.vhd(344): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(344): Expression is not a signal.
+# ** Error: source/mycpu.vhd(347): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(351): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(351): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(352): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(352): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(352): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(354): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(354): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(358): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(358): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(360): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(360): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(363): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(363): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(369): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(372): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(373): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(374): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(374): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(375): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(376): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(383): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(383): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: [14] source/mycpu.vhd(286): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(287): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(296): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(297): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(348): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(355): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(385): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(179): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(181): (vcom-1141) Identifier "PipelineController" does not identify a component declaration.
+# ** Error: source/mycpu.vhd(200): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(209): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(209): (vcom-1136) Unknown identifier "NextPC".
+# ** Error: source/mycpu.vhd(209): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(212): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(215): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(215): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(215): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(215): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(215): Signal "BranchAddress" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type (error).
+# ** Error: source/mycpu.vhd(257): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(257): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(257): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(261): (vcom-1136) Unknown identifier "nextPC".
+# ** Error: source/mycpu.vhd(265): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(265): Expression is not a signal.
+# ** Error: source/mycpu.vhd(265): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(265): Expression is not a signal.
+# ** Error: source/mycpu.vhd(271): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(271): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(271): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(283): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(283): Expression is not a signal.
+# ** Error: source/mycpu.vhd(283): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(283): Expression is not a signal.
+# ** Error: source/mycpu.vhd(288): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(288): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(289): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(290): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(291): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(294): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(294): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(294): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(298): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(298): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(299): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(300): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(301): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(307): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(307): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(316): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(316): Expression is not a signal.
+# ** Error: source/mycpu.vhd(316): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(316): Expression is not a signal.
+# ** Error: source/mycpu.vhd(319): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(322): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(322): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(324): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(324): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(326): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(326): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(326): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(328): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(328): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(330): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(330): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(332): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(332): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(337): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(337): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(339): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(339): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(344): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(344): Expression is not a signal.
+# ** Error: source/mycpu.vhd(344): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(344): Expression is not a signal.
+# ** Error: source/mycpu.vhd(347): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(351): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(351): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(352): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(352): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(352): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(354): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(354): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(358): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(358): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(360): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(360): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(363): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(363): (vcom-1136) Unknown identifier "rtd_stg5".
+# ** Error: source/mycpu.vhd(369): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(372): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(373): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(374): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(374): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(375): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(376): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(383): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(383): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: [14] source/mycpu.vhd(286): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(287): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(296): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(297): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(348): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(355): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(385): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(180): Signal "rtd_stg5" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: source/mycpu.vhd(182): (vcom-1141) Identifier "PipelineController" does not identify a component declaration.
+# ** Error: source/mycpu.vhd(201): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(210): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(210): (vcom-1136) Unknown identifier "NextPC".
+# ** Error: source/mycpu.vhd(210): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(213): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(216): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(216): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(216): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(216): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(216): Signal "BranchAddress" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type (error).
+# ** Error: source/mycpu.vhd(258): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(258): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(258): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(262): (vcom-1136) Unknown identifier "nextPC".
+# ** Error: source/mycpu.vhd(266): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(266): Expression is not a signal.
+# ** Error: source/mycpu.vhd(266): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(266): Expression is not a signal.
+# ** Error: source/mycpu.vhd(272): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(272): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(272): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(284): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(284): Expression is not a signal.
+# ** Error: source/mycpu.vhd(284): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(284): Expression is not a signal.
+# ** Error: source/mycpu.vhd(289): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(289): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(290): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(291): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(292): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(295): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(295): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(295): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(299): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(299): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(300): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(301): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(302): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(308): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(308): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(317): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(317): Expression is not a signal.
+# ** Error: source/mycpu.vhd(317): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(317): Expression is not a signal.
+# ** Error: source/mycpu.vhd(320): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(320): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(323): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(323): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(326): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(326): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(327): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(327): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(329): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(331): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(331): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(334): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(334): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(336): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(336): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(338): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(338): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(341): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(341): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(345): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(345): Expression is not a signal.
+# ** Error: source/mycpu.vhd(345): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(345): Expression is not a signal.
+# ** Error: source/mycpu.vhd(348): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(348): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(352): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(353): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(353): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(353): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(355): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(355): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(359): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(361): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(361): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(364): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(370): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(373): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(374): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(375): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(376): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(384): (vcom-1136) Unknown identifier "Im32_stg3".
+# ** Error: source/mycpu.vhd(384): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: [14] source/mycpu.vhd(287): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(288): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(297): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(298): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(349): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(356): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(386): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(182): Symbol "pipelinecontroller" has already been declared in this region.
+# ** Error: source/mycpu.vhd(182): (vcom-1141) Identifier "PipelineController" does not identify a component declaration.
+# ** Error: source/mycpu.vhd(210): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(210): (vcom-1136) Unknown identifier "NextPC".
+# ** Error: source/mycpu.vhd(210): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(213): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(216): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(216): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(216): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(216): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(216): Signal "BranchAddress" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type (error).
+# ** Error: source/mycpu.vhd(258): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(258): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(258): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(262): (vcom-1136) Unknown identifier "nextPC".
+# ** Error: source/mycpu.vhd(266): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(266): Expression is not a signal.
+# ** Error: source/mycpu.vhd(266): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(266): Expression is not a signal.
+# ** Error: source/mycpu.vhd(272): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(272): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(272): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(284): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(284): Expression is not a signal.
+# ** Error: source/mycpu.vhd(284): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(284): Expression is not a signal.
+# ** Error: source/mycpu.vhd(290): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(291): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(292): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(295): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(295): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(295): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(300): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(301): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(302): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(317): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(317): Expression is not a signal.
+# ** Error: source/mycpu.vhd(317): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(317): Expression is not a signal.
+# ** Error: source/mycpu.vhd(320): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(320): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(323): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(323): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(326): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(326): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(327): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(327): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(329): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(331): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(331): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(334): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(334): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(336): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(336): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(338): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(338): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(341): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(341): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(345): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(345): Expression is not a signal.
+# ** Error: source/mycpu.vhd(345): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(345): Expression is not a signal.
+# ** Error: source/mycpu.vhd(348): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(348): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(353): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(353): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(353): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(355): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(355): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(361): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(361): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(364): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(370): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(373): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(374): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(375): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(376): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Warning: [14] source/mycpu.vhd(287): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(288): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(297): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(298): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(349): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(356): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(386): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(183): (vcom-1027) Number of positional association elements (6) exceeds number of formals (5).
+# ** Error: source/mycpu.vhd(210): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(210): (vcom-1136) Unknown identifier "NextPC".
+# ** Error: source/mycpu.vhd(210): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(213): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(216): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(216): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(216): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(216): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(216): Signal "BranchAddress" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type (error).
+# ** Error: source/mycpu.vhd(258): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(258): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(258): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(262): (vcom-1136) Unknown identifier "nextPC".
+# ** Error: source/mycpu.vhd(266): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(266): Expression is not a signal.
+# ** Error: source/mycpu.vhd(266): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(266): Expression is not a signal.
+# ** Error: source/mycpu.vhd(272): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(272): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(272): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(284): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(284): Expression is not a signal.
+# ** Error: source/mycpu.vhd(284): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(284): Expression is not a signal.
+# ** Error: source/mycpu.vhd(290): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(291): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(292): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(295): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(295): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(295): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(300): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(301): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(302): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(317): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(317): Expression is not a signal.
+# ** Error: source/mycpu.vhd(317): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(317): Expression is not a signal.
+# ** Error: source/mycpu.vhd(320): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(320): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(323): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(323): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(326): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(326): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(327): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(327): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(329): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(331): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(331): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(334): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(334): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(336): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(336): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(338): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(338): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(341): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(341): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(345): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(345): Expression is not a signal.
+# ** Error: source/mycpu.vhd(345): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(345): Expression is not a signal.
+# ** Error: source/mycpu.vhd(348): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(348): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(353): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(353): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(353): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(355): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(355): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(361): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(361): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(364): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(370): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(373): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(374): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(375): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(376): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Warning: [14] source/mycpu.vhd(287): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(288): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(297): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(298): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(349): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(356): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(386): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(184): Signal "ExC" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: source/mycpu.vhd(184): Signal "MEMC" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: source/mycpu.vhd(184): Signal "WBC" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: source/mycpu.vhd(211): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(211): (vcom-1136) Unknown identifier "NextPC".
+# ** Error: source/mycpu.vhd(211): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(214): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(217): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(217): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(217): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(217): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(217): Signal "BranchAddress" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type (error).
+# ** Error: source/mycpu.vhd(259): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(259): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(259): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(263): (vcom-1136) Unknown identifier "nextPC".
+# ** Error: source/mycpu.vhd(267): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(267): Expression is not a signal.
+# ** Error: source/mycpu.vhd(267): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(267): Expression is not a signal.
+# ** Error: source/mycpu.vhd(273): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(273): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(273): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(285): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(285): Expression is not a signal.
+# ** Error: source/mycpu.vhd(285): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(285): Expression is not a signal.
+# ** Error: source/mycpu.vhd(291): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(292): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(293): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(296): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(296): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(296): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(301): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(302): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(303): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(318): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(318): Expression is not a signal.
+# ** Error: source/mycpu.vhd(318): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(318): Expression is not a signal.
+# ** Error: source/mycpu.vhd(321): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(321): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(324): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(324): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(326): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(326): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(327): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(328): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(328): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(328): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(330): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(330): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(332): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(332): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(334): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(334): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(337): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(337): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(339): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(339): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(341): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(341): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(342): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(342): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(346): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(346): Expression is not a signal.
+# ** Error: source/mycpu.vhd(346): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(346): Expression is not a signal.
+# ** Error: source/mycpu.vhd(349): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(349): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(354): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(354): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(354): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(356): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(356): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(362): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(362): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(365): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(371): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(374): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(376): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(380): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(380): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Warning: [14] source/mycpu.vhd(288): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(289): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(298): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(299): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(350): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(357): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(387): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(161): near "downto": syntax error
+# ** Error: source/mycpu.vhd(185): (vcom-1136) Unknown identifier "ExC".
+# ** Error: source/mycpu.vhd(185): (vcom-1136) Unknown identifier "MemC".
+# ** Error: source/mycpu.vhd(212): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(212): (vcom-1136) Unknown identifier "NextPC".
+# ** Error: source/mycpu.vhd(212): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(215): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(218): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(218): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(218): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(218): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(218): Signal "BranchAddress" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type (error).
+# ** Error: source/mycpu.vhd(260): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(260): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(260): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(264): (vcom-1136) Unknown identifier "nextPC".
+# ** Error: source/mycpu.vhd(268): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(268): Expression is not a signal.
+# ** Error: source/mycpu.vhd(268): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(268): Expression is not a signal.
+# ** Error: source/mycpu.vhd(274): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(274): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(274): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(286): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(286): Expression is not a signal.
+# ** Error: source/mycpu.vhd(286): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(286): Expression is not a signal.
+# ** Error: source/mycpu.vhd(292): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(293): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(294): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(297): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(297): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(297): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(302): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(303): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(304): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(311): (vcom-1136) Unknown identifier "ExC".
+# ** Error: source/mycpu.vhd(312): Signal "WBC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(313): (vcom-1136) Unknown identifier "MEMC".
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(319): Expression is not a signal.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(319): Expression is not a signal.
+# ** Error: source/mycpu.vhd(322): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(322): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(327): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(328): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(328): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(329): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(329): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(331): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(331): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(336): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(336): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(338): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(338): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(342): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(342): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(343): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(343): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(347): Expression is not a signal.
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(347): Expression is not a signal.
+# ** Error: source/mycpu.vhd(350): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(350): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(355): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(355): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(355): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(357): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(357): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(363): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(363): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(366): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(372): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(380): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(380): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(381): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(381): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(185): (vcom-1272) Length of formal "WBC" is 2; length of actual is 3.
+# ** Warning: [14] source/mycpu.vhd(289): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(290): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(299): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(300): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(351): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(358): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(388): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(212): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(212): (vcom-1136) Unknown identifier "NextPC".
+# ** Error: source/mycpu.vhd(212): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(215): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(218): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(218): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(218): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(218): (vcom-1136) Unknown identifier "AlmostPC".
+# ** Error: source/mycpu.vhd(218): Signal "BranchAddress" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type (error).
+# ** Error: source/mycpu.vhd(260): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(260): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(260): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(264): (vcom-1136) Unknown identifier "nextPC".
+# ** Error: source/mycpu.vhd(268): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(268): Expression is not a signal.
+# ** Error: source/mycpu.vhd(268): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(268): Expression is not a signal.
+# ** Error: source/mycpu.vhd(274): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(274): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(274): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(286): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(286): Expression is not a signal.
+# ** Error: source/mycpu.vhd(286): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(286): Expression is not a signal.
+# ** Error: source/mycpu.vhd(292): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(293): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(294): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(297): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(297): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(297): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(302): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(303): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(304): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(311): Signal "ExC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(312): Signal "WBC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(313): Signal "MEMC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(319): Expression is not a signal.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(319): Expression is not a signal.
+# ** Error: source/mycpu.vhd(322): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(322): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(327): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(328): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(328): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(329): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(329): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(331): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(331): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(336): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(336): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(338): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(338): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(342): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(342): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(343): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(343): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(347): Expression is not a signal.
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(347): Expression is not a signal.
+# ** Error: source/mycpu.vhd(350): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(350): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(355): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(355): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(355): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(357): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(357): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(363): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(363): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(366): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(372): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(380): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(380): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(381): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(381): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(185): (vcom-1272) Length of formal "WBC" is 2; length of actual is 3.
+# ** Warning: [14] source/mycpu.vhd(289): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(290): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(299): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(300): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(351): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(358): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(388): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(215): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(218): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(218): Bad expression in left operand of infix expression "&".
+# ** Error: source/mycpu.vhd(218): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: source/mycpu.vhd(260): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(260): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(260): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(268): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(268): Expression is not a signal.
+# ** Error: source/mycpu.vhd(268): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(268): Expression is not a signal.
+# ** Error: source/mycpu.vhd(274): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(274): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(274): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(286): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(286): Expression is not a signal.
+# ** Error: source/mycpu.vhd(286): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(286): Expression is not a signal.
+# ** Error: source/mycpu.vhd(292): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(293): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(294): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(297): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(297): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(297): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(302): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(303): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(304): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(311): Signal "ExC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(312): Signal "WBC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(313): Signal "MEMC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(319): Expression is not a signal.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(319): Expression is not a signal.
+# ** Error: source/mycpu.vhd(322): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(322): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(327): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(328): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(328): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(329): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(329): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(331): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(331): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(336): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(336): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(338): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(338): (vcom-1136) Unknown identifier "PCP4_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(342): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(342): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(343): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(343): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(347): Expression is not a signal.
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(347): Expression is not a signal.
+# ** Error: source/mycpu.vhd(350): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(350): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(355): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(355): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(355): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(357): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(357): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(363): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(363): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(366): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(372): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(380): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(380): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(381): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(381): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(185): (vcom-1272) Length of formal "WBC" is 2; length of actual is 3.
+# ** Warning: [14] source/mycpu.vhd(289): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(290): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(299): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(300): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(351): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(358): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(388): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(260): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(260): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(260): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(268): (vcom-1136) Unknown identifier "nResetSynch_S12".
+# ** Error: source/mycpu.vhd(268): Expression is not a signal.
+# ** Error: source/mycpu.vhd(268): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(268): Expression is not a signal.
+# ** Error: source/mycpu.vhd(274): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(274): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(274): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(286): (vcom-1136) Unknown identifier "nResetSynch_S23".
+# ** Error: source/mycpu.vhd(286): Expression is not a signal.
+# ** Error: source/mycpu.vhd(286): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(286): Expression is not a signal.
+# ** Error: source/mycpu.vhd(292): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(293): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(294): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(297): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(297): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(297): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(302): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(303): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(304): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(311): Signal "ExC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(312): Signal "WBC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(313): Signal "MEMC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "nResetSynch_S34".
+# ** Error: source/mycpu.vhd(319): Expression is not a signal.
+# ** Error: source/mycpu.vhd(319): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(319): Expression is not a signal.
+# ** Error: source/mycpu.vhd(325): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(325): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(327): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(328): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(328): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(329): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(329): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(333): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(333): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(336): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(336): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(340): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(340): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(342): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(342): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(343): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(343): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "nResetSynch_S45".
+# ** Error: source/mycpu.vhd(347): Expression is not a signal.
+# ** Error: source/mycpu.vhd(347): (vcom-1136) Unknown identifier "Stall_S45".
+# ** Error: source/mycpu.vhd(347): Expression is not a signal.
+# ** Error: source/mycpu.vhd(350): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(350): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(355): (vcom-1136) Unknown identifier "Stall".
+# ** Error: source/mycpu.vhd(355): Bad expression in right operand of infix expression "and".
+# ** Error: source/mycpu.vhd(355): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: source/mycpu.vhd(357): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(357): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(363): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(363): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(366): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(372): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(375): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(376): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(377): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(378): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(380): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(380): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(381): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(381): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(185): (vcom-1272) Length of formal "WBC" is 2; length of actual is 3.
+# ** Warning: [14] source/mycpu.vhd(289): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(290): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(299): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(300): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(351): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(358): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(388): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(173): (vcom-1294) Declaration with designator "nResetSynch" already exists in this region.
+# ** =====> Prior declaration of "nResetSynch" is at source/mycpu.vhd(143).
+# ** Error: source/mycpu.vhd(294): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(295): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(296): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(304): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(305): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(306): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(313): Signal "ExC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(314): Signal "WBC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(315): Signal "MEMC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(327): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(329): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(330): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(330): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(337): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(337): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(338): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(338): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(342): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(342): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(344): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(344): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(345): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(345): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(352): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(352): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(359): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(359): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(365): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(365): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(368): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(374): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(380): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(380): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(381): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(381): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(382): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(382): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(383): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(383): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(187): (vcom-1272) Length of formal "WBC" is 2; length of actual is 3.
+# ** Warning: [14] source/mycpu.vhd(291): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(292): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(301): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(302): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(353): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(360): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(390): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: source/mycpu.vhd(294): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(295): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(296): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(304): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(305): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(306): Bit string literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: source/mycpu.vhd(313): Signal "ExC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(314): Signal "WBC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(315): Signal "MEMC" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: source/mycpu.vhd(327): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(327): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(329): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(329): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(330): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(330): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(335): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(335): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(337): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(337): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(338): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(338): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(342): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(342): (vcom-1136) Unknown identifier "WBC_stg4".
+# ** Error: source/mycpu.vhd(344): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(344): (vcom-1136) Unknown identifier "MEMC_stg4".
+# ** Error: source/mycpu.vhd(345): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(345): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(352): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(352): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(359): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(359): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(365): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(365): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(368): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(374): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(377): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "WBC_stg5".
+# ** Error: source/mycpu.vhd(379): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(379): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(380): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(380): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(381): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(381): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(382): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(382): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(383): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(383): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(187): (vcom-1272) Length of formal "WBC" is 2; length of actual is 3.
+# ** Warning: [14] source/mycpu.vhd(291): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(292): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(301): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(302): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(353): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(360): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(390): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.
+vcom source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Warning: [14] source/mycpu.vhd(298): (vcom-1167) Index value -3 (of type std.STANDARD.NATURAL) is out of range 0 to 2147483647.
+# ** Warning: [14] source/mycpu.vhd(299): (vcom-1167) Index value -5 (of type std.STANDARD.NATURAL) is out of range 0 to 2147483647.
+# ** Warning: [14] source/mycpu.vhd(300): (vcom-1167) Index value -3 (of type std.STANDARD.NATURAL) is out of range 0 to 2147483647.
+# ** Warning: [14] source/mycpu.vhd(308): (vcom-1167) Index value -3 (of type std.STANDARD.NATURAL) is out of range 0 to 2147483647.
+# ** Warning: [14] source/mycpu.vhd(309): (vcom-1167) Index value -5 (of type std.STANDARD.NATURAL) is out of range 0 to 2147483647.
+# ** Warning: [14] source/mycpu.vhd(310): (vcom-1167) Index value -3 (of type std.STANDARD.NATURAL) is out of range 0 to 2147483647.
+# ** Warning: [14] source/mycpu.vhd(333): (vcom-1167) Index value -7 (of type std.STANDARD.NATURAL) is out of range 0 to 2147483647.
+# ** Error: source/mycpu.vhd(334): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(334): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Warning: [14] source/mycpu.vhd(341): (vcom-1167) Index value -7 (of type std.STANDARD.NATURAL) is out of range 0 to 2147483647.
+# ** Error: source/mycpu.vhd(342): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(342): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(348): (vcom-1136) Unknown identifier "MEM3".
+# ** Error: source/mycpu.vhd(349): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(349): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Warning: [14] source/mycpu.vhd(363): (vcom-1167) Index value -5 (of type std.STANDARD.NATURAL) is out of range 0 to 2147483647.
+# ** Error: source/mycpu.vhd(372): (vcom-1136) Unknown identifier "rtd_stg4".
+# ** Error: source/mycpu.vhd(378): (vcom-1136) Unknown identifier "dumpAddr".
+# ** Error: source/mycpu.vhd(383): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(383): (vcom-1136) Unknown identifier "imemAddr".
+# ** Error: source/mycpu.vhd(384): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(384): (vcom-1136) Unknown identifier "imemData".
+# ** Error: source/mycpu.vhd(385): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(385): (vcom-1136) Unknown identifier "dmemDataRead".
+# ** Error: source/mycpu.vhd(386): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(386): (vcom-1136) Unknown identifier "dmemDataWrite".
+# ** Error: source/mycpu.vhd(387): Illegal target for signal assignment.
+# ** Error: source/mycpu.vhd(387): (vcom-1136) Unknown identifier "dmemAddr".
+# ** Error: source/mycpu.vhd(191): (vcom-1272) Length of formal "WBC" is 2; length of actual is 3.
+# ** Warning: [14] source/mycpu.vhd(295): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(296): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(298): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Warning: [14] source/mycpu.vhd(299): (vcom-1272) Length of expected is 3; length of actual is 8.
+# ** Warning: [14] source/mycpu.vhd(300): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Warning: [14] source/mycpu.vhd(305): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(306): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] source/mycpu.vhd(308): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Warning: [14] source/mycpu.vhd(309): (vcom-1272) Length of expected is 3; length of actual is 8.
+# ** Warning: [14] source/mycpu.vhd(310): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Warning: [14] source/mycpu.vhd(331): (vcom-1272) Length of expected is 3; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(333): (vcom-1272) Length of expected is 5; length of actual is 12.
+# ** Warning: [14] source/mycpu.vhd(339): (vcom-1272) Length of expected is 3; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(341): (vcom-1272) Length of expected is 5; length of actual is 12.
+# ** Warning: [14] source/mycpu.vhd(356): (vcom-1272) Length of expected is 3; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(357): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Warning: [14] source/mycpu.vhd(363): (vcom-1272) Length of expected is 3; length of actual is 8.
+# ** Warning: [14] source/mycpu.vhd(364): (vcom-1272) Length of expected is 32; length of actual is 2.
+# ** Error: source/mycpu.vhd(394): VHDL Compiler exiting
+# /package/eda/mg/modeltech_10.1b/modeltech/linux_x86_64/vcom failed.

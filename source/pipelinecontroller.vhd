@@ -7,7 +7,7 @@ entity pipelinecontroller is
     signal ExtType : out std_logic;
     signal EXC : out std_logic_vector(4 downto 0);
     signal MEMC : out std_logic_vector(4 downto 0);
-    signal WBC : out std_logic_vector(1 downto 0);
+    signal WBC : out std_logic_vector(2 downto 0);
   signal opcode :  in std_logic_vector(5 downto 0);
   signal  funct :  in std_logic_vector(5 downto 0)
   );
