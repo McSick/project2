@@ -42,7 +42,7 @@ architecture behavioral of cpu is
 
 	-- you may change the entity of your component
 	-- as well as the signal names
-	component mycpu
+	component mycputest
 		port ( 
 			-- clock signal
 			CLK							:		in	std_logic;
@@ -94,7 +94,7 @@ architecture behavioral of cpu is
     
 begin
 
-	theCPU : mycpu
+	theCPU : mycputest
 	port map (CLK => cpuCLK, 
               nReset => nReset, 
               halt => cpuHalt, 
