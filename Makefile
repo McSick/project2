@@ -25,8 +25,16 @@ WORKDIR = ./work
 
 # begin HDL files (keep this)
 
+a32bitsubr.vhd : a1bitaddr.vhd
+a32bitaddr.vhd : a1bitaddr.vhd
+alu.vhd : a32bitaddr.vhd a32bitsubr.vhd shifter.vhd 
 registerFile_tb.vhd : registerFile.vhd
 regTest.vhd: registerFile.vhd
+VarLatRam.vhd : ram.vhd
+mycpu.vhd : a32bitaddr.vhd registerFile.vhd alu.vhd Extender.vhd pipelinecontroller.vhd MemControl.vhd icache.vhd dcache.vhd
+cpu.vhd : mycpu.vhd VarLatRAM.vhd
+
+tb_cpu.vhd : cpu.vhd
 
 # end HDL files (keep this)
 
