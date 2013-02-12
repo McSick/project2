@@ -23,7 +23,8 @@ entity MemControl is
         data : out std_logic_vector(31 downto 0);
         q : in std_logic_vector(31 downto 0);
         memstate : in std_logic_vector(1 downto 0);
-        
+        wrenO : out std_logic;
+        rdenO : out std_logic;
         --Stall
         stall : out std_logic); 
 end MemControl;
@@ -44,6 +45,8 @@ begin
 
 MemoryData <= q;
 Instruction <= q;
+wrenO <= wren;
+rdenO <= irden or rden;
 nextstatelogic : process(wren,rden,memstate)
 begin
   stall <= '0';
