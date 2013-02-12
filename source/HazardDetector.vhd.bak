@@ -34,14 +34,12 @@ end process;
 
 detect : process(state,IdRE,IdRt,IfRs,IfRt)
 begin
-  Hazard <= '0';
   case state is
   when waiting =>
      IF(IdRE ='1' and ((IdRt = IfRs) or (IdRt = IfRt))) then
     nextstate <= stalling;
     PCStall <= '1';
     IFSTALL <= '1';
-    Hazard <= '1';
   else
     PCStall <= '0';
     IFSTALL <= '0';
