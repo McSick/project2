@@ -34,7 +34,7 @@ architecture behavioral of mycpu is
 	        overflow, zero: OUT STD_LOGIC);
 	end component;
       
-	component RegisterFile
+	component registerFile
 	port(
 		-- Write data input port
 		wdat		:	in	std_logic_vector (31 downto 0);
@@ -70,7 +70,7 @@ architecture behavioral of mycpu is
     signal ExtType : out std_logic;
     signal EXC : out std_logic_vector(4 downto 0);
     signal MEMC : out std_logic_vector(4 downto 0);
-    signal WBC : out std_logic_vector(1 downto 0);
+    signal WBC : out std_logic_vector(2 downto 0);
     signal opcode :  in std_logic_vector(5 downto 0);
     signal  funct :  in std_logic_vector(5 downto 0)
 	);
@@ -80,7 +80,8 @@ architecture behavioral of mycpu is
 	port(
 		     --IMemory
         	 PC : in std_logic_vector(31 downto 0);
-	        Instruction : out std_logic_vector(31 downto 0);	               
+	        Instruction : out std_logic_vector(31 downto 0);	
+	        irden : in std_logic;               
 	        --DMemory
 	        Daddress : in std_logic_vector(31 downto 0);
 	        writeData : in std_logic_vector(31 downto 0);
@@ -89,11 +90,11 @@ architecture behavioral of mycpu is
 	        MemoryData : out std_logic_vector(31 downto 0);                
         	--to Ram
 	        address : out std_logic_vector(15 downto 0);
-	        data : out std_logic_vector(31 downto 0);
-	        wrenO : out std_logic;
-	        rdenO : out std_logic;
+	        data : out std_logic_vector(31 downto 0);	    
 	        q : in std_logic_vector(31 downto 0);
-	        memstate : in std_logic_vector(1 downto 0);        
+	        memstate : in std_logic_vector(1 downto 0);  
+	        wrenO : out std_logic;
+	        rdenO : out std_logic;      
 	        --Stall
 	        stall : out std_logic
 	);
@@ -135,14 +136,14 @@ architecture behavioral of mycpu is
     	);
 	end component;
 
-signal PC,Instruction,MemoryData : std_logic_vector(31 downto 0);
+signal PC,Instruction,MemoryData,dmemAddr,admemAddr : std_logic_vector(31 downto 0);
 
 --Internal Signal declarations
 signal VarLatRAMAddress : std_logic_vector(15 downto 0);
-signal VarLatRAMData : std_logic_vector (31 downto 0);
+signal VarLatRAMData,dmemDataWrite,dmemDataRead,dmemAddrArb,dmemDataWriteArb,PCArb,InstructionArb,dmemDataReadArb,ramQarb : std_logic_vector (31 downto 0);
 
-signal ExtType,memwait,imemReadEn,StallArb,iRdenArb: std_logic;
-signal WriteEnable : std_logic;
+signal ExtType,memwait,imemReadEn,StallArb,iRdenArb,dmemWait,irden,wrenArbO,rdenArbO: std_logic;
+signal WriteEnable, Stalli, Stalld,RdenArb,WrenArb,admemwait : std_logic;
 signal RegDst : std_logic;
 signal AluSrc : std_logic;
 signal ALUcntr : std_logic_vector(2 downto 0);
@@ -154,11 +155,9 @@ signal zero,overflow,over1,over2 : std_logic;
 signal negative : std_logic;
 signal BusA, BusB,Im32,Bsel,PCP4,PCJmp,PCJmp_stg4,JumpAddress,BranchAddress,AlmostPC,nextPC,ALUout,shifted,WriteDataReg2: std_logic_vector(31 downto 0);
 signal rs,rt,rd,rtd : std_logic_vector(4 downto 0);
-signal memstate : std_logic;
 -- Stage 1
 -- Stage 2
 signal PCP4_stg2, Instruction_stg2 : std_logic_vector(31 downto 0);
-signal memstate_stg2,Stall_23 : std_logic;
 signal ExC,MEMC :std_logic_vector( 4 downto 0);
 signal WBC : std_logic_vector(2 downto 0);
 -- Stage 3
@@ -167,7 +166,7 @@ signal ExC_stg3,MEMC_stg3 :std_logic_vector( 4 downto 0);
 signal WBC_stg3 : std_logic_vector(2 downto 0);
 -- Stage 4
 signal rtd_stg4 : std_logic_vector (4 downto 0);
-signal Instruction_stg4,PCP4_stg4 : std_logic_vector(31 downto 0);
+signal Instruction_stg4,PCP4_stg4,ALUout_stg4,BusB_stg4 : std_logic_vector(31 downto 0);
 signal zero_stg4 : std_logic;
 signal MEMC_stg4 :std_logic_vector( 4 downto 0);
 signal WBC_stg4 : std_logic_vector(2 downto 0);
@@ -193,7 +192,7 @@ begin
   Port map (ExtType,ExC,MemC,WBC,Instruction_stg2(31 downto 26),Instruction_stg2(5 downto 0));
  
   ADDPC4 : a32bitaddr
-  Port map(PC,x"00000004",PCP4,);
+  Port map(PC,x"00000004",PCP4);
 
   ADDBR : a32bitaddr
   Port map(PCP4_stg3,shifted, PCJmp,over2);    
@@ -202,13 +201,13 @@ begin
   Port map(Instruction_stg2(15 downto 0),ExtType,Im32);
   
   DataCache: dcache
-  Port map(CLK,nReset,);
+  Port map(CLK,nReset,MEMC_stg4(1),MEMC_stg4(2),dmemWait,dmemAddr,dmemDataRead,dmemDataWrite,RdenArb,WrenArb,admemwait,dmemAddrArb,dmemDataReadArb,dmemDataWriteArb);
   
   InstructionCache: icache
   Port map(CLK,nReset,imemReadEn,Stalli,PC,Instruction,StallArb,iRdenArb,PCArb,InstructionArb);
   
   MemoryControllerBlock: MemControl 
-  Port map(PCArb,InstructionArb,dmemAddrArb,dmemDataWriteArb,WrenArb,RdenArb,dmemDataRead,VarLatRAMAddressArb,VarLatRAMDataArb,ramQ,ramState,StallArb);
+  Port map(PCArb,InstructionArb,irden,dmemAddrArb,dmemDataWriteArb,WrenArb,RdenArb,dmemDataReadArb,VarLatRAMAddress,VarLatRAMData,ramQarb,ramState,wrenArbO,rdenArbO,Stall);
   
   --Mux Regdst
   with RegDst select
@@ -284,16 +283,16 @@ begin
      IFIDRegister: process(CLK,nReset,nResetSynch_S12,Stall_S12)		--Stage 1-2
 	begin
 	if (nReset = '0') then
-		memstate_stg2 <= '0';
+
 		Instruction_stg2 <=  x"00000000";
 		PCP4_stg2 <= x"00000000";
-	elsif (rising_edge(CLK))and(Stall = '0') then
+	elsif (rising_edge(CLK))and(Stall_S12 = '0') then
 		if(nResetSynch = '0') then
-			memstate_stg2 <= '0';
+
 			Instruction_stg2 <=  x"00000000";
 			PCP4_stg2 <= x"00000000";
 		else
-			memstate_stg2 <= memstate;
+
 			Instruction_stg2 <= Instruction;
 			PCP4_stg2 <= PCP4;				
 		end if;
@@ -302,22 +301,22 @@ begin
      IDEXRegister: process(CLK,nReset,nResetSynch_S23,Stall_S23)		--Stage 2-3
 	begin
 	if (nReset = '0') then
-		BusA_stg3 <= "00000";
-	 	BusB_stg3 <= "00000";
+		BusA_stg3 <= x"00000000";
+	 	BusB_stg3 <= x"00000000";
 		Im32_stg3 <= x"00000000";
-		ExC_stg3 <= x"0";
+		ExC_stg3 <= "00000";
 		WBC_stg3 <= "000";				
-		MEMC_stg3 <= x"0";		
+		MEMC_stg3 <= "00000";		
 		Instruction_stg3 <=  x"00000000";		
 		PCP4_stg3 <=  x"00000000";
-	elsif (rising_edge(CLK))and(Stall = '0') then
+	elsif (rising_edge(CLK))and(Stall_S23 = '0') then
 		if(nResetSynch = '0') then
-			BusA_stg3 <= "00000";
-		 	BusB_stg3 <= "00000";
+			BusA_stg3 <= x"00000000";
+		 	BusB_stg3 <= x"00000000";
 			Im32_stg3 <= x"00000000";
-			ExC_stg3 <= x"0";
+			ExC_stg3 <= "00000";
 			WBC_stg3 <= "000";				
-			MEMC_stg3 <= x"0";		
+			MEMC_stg3 <= "00000";		
 			Instruction_stg3 <=  x"00000000";		
 			PCP4_stg3 <=  x"00000000";
 		else
@@ -340,18 +339,20 @@ begin
 		
 		WBC_stg4 <= "000";
 		Instruction_stg4 <=  x"00000000";
-		MEMC_stg4 <= x"0";
+		MEMC_stg4 <= "00000";
 		BusB_stg4 <= x"00000000";
 		rtd_stg4 <= "00000";
-	elsif (rising_edge(CLK))and(Stall = '0') then
+		ALUout_stg4 <= x"00000000";
+	elsif (rising_edge(CLK))and(Stall_S34 = '0') then
 		if(nResetSynch = '0') then
 			PCP4_stg4 <= x"00000000";
 			zero_stg4 <= '0';
 			WBC_stg4 <= "000";
 			Instruction_stg4 <=  x"00000000";
-			MEMC_stg4 <= x"0";
+			MEMC_stg4 <= "00000";
 			BusB_stg4 <= x"00000000";
 			rtd_stg4 <= "00000";
+			ALUout_stg4 <= x"00000000";
 		else
 			PCP4_stg4 <= PCP4_stg3;
 			zero_stg4 <= zero;
@@ -360,6 +361,7 @@ begin
 			MEMC_stg4 <= MEMC_stg3;
 			BusB_stg4 <= BusB_stg3;
 			rtd_stg4 <= rtd;
+			ALUout_stg4 <= ALUout;
 		end if;
 	end if;
      end process;
@@ -367,43 +369,49 @@ begin
 	begin
 	if (nReset = '0') then	--asynch reset
 		WBC_stg5 <= "000";
-		MemoryData_stg5 <= "00";
+		MemoryData_stg5 <= x"00000000";
 		ALUout_stg5 <= x"00000000";
 		Instruction_stg5 <=  x"00000000";
 		rtd_stg5 <= "00000";
-	elsif (rising_edge(CLK))and(Stall = '0') then
+	elsif (rising_edge(CLK))and(Stall_S45 = '0') then
 		if(nResetSynch = '0') then	--synch reset	
 			WBC_stg5 <= "000";
-			MemoryData_stg5 <="00"; 
+			MemoryData_stg5 <= x"00000000"; 
 			ALUout_stg5 <= x"00000000";
 			Instruction_stg5 <=  x"00000000";
 			rtd_stg5 <= "00000";
 		else	
 		  	WBC_stg5 <= WBC_stg4;
 			MemoryData_stg5 <= MemoryData;
+			ALUout_stg5 <= ALUout_stg4;
 			Instruction_stg5 <= Instruction_stg4;
 			rtd_stg5 <= rtd_stg4;
 		end if;
 	end if;
      end process;
+     
+Stall_S12<='0';
+Stall_S23<='0';
+Stall_S34<='0';
+Stall_S45<='0';
+nResetSynch_S12<='1';
+nResetSynch_S23<='1';
+nResetSynch_S34<='1';
+nResetSynch_S45<='1';
 
-
-  Stall <= Stalli or Stalld;
-  ramWen<=MemC_stg4(2);
-  ramRen<=MemC_stg4(1);
+  irden <= (not Stall) or (not MEMC_stg4(1))or (not MEMC_stg4(2));
+  ramWen<= wrenArbO;
+  ramRen<= rdenArbO;
   ramAddr <= VarLatRAMAddress;
   ramData <= VarLatRAMData;
   MemOutMux <= WBC_stg5(1);
   lui <=WBC_stg5(0);
-  imemAddr <= PC;
-  imemData <= Instruction;
-  dmemDataRead <= MemoryData;
   dmemDataWrite <= BusB_stg4;
-  dmemAddr <= ALUout;
+  dmemAddr <= ALUout_stg4;
   rd <= Instruction_stg3(15 downto 11);
   rt <= Instruction_stg3(20 downto 16);
   rs <= Instruction(25 downto 21);
   Halt <= HaltI;
   shifted <=Im32_stg3(29 downto 0) & "00";  
-  
+  ramQarb<=ramQ;
 end behavioral;
