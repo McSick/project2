@@ -8,7 +8,7 @@ entity MemControl is
         --IMemory
         PC : in std_logic_vector(31 downto 0);
         Instruction : out std_logic_vector(31 downto 0);
-
+        irden : in std_logic;
                
         --DMemory
         Daddress : in std_logic_vector(31 downto 0);
@@ -25,7 +25,7 @@ entity MemControl is
         memstate : in std_logic_vector(1 downto 0);
         
         --Stall
-        stall : out std_logic);
+        stall : out std_logic); 
 end MemControl;
 
 architecture behavioral of MemControl is
@@ -40,7 +40,7 @@ architecture behavioral of MemControl is
 
 
 begin
-  
+     
 
 MemoryData <= q;
 Instruction <= q;
@@ -54,15 +54,15 @@ begin
   
     case memstate is
     when MEMFREE => 
-      if(wren = '1' ) then
+      if(wren = '1' or rden ='1') then
           address <= Daddress (15 downto 0);
           data <= writeData;
-
+ 
       
       end if; 
     when MEMBUSY =>
      
-      if(wren = '1' ) then
+      if(wren = '1' or rden = '1') then
           address <= Daddress (15 downto 0);
           data <= writeData;
 
@@ -71,7 +71,7 @@ begin
       end if; 
       stall <= '1';
   when MEMACCESS =>
-      if(wren = '1' ) then
+      if(wren = '1' or rden ='1') then
           address <= Daddress (15 downto 0);
           data <= writeData;
 
