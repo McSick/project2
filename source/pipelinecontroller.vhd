@@ -33,7 +33,7 @@ begin
  
  EXC <= RegDst & AluSrc & ALU_cntrl;
  MEMC <= Branch & BNE &  MemWrite & MemRead & Jump;
- WBC <= MemOut & LUI;
+ WBC <= WriteEnable & MemOut & LUI;
  OpSelect : process(opcode,funct)
  begin
    --1 when signed

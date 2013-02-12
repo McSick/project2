@@ -19,7 +19,7 @@ architecture behavioral of mycpu is
   
    	component a32bitaddr 
   	port( 
-		A : in std_logic_vector(31 downto 0);
+		     A : in std_logic_vector(31 downto 0);
 	      	B : in std_logic_vector(31 downto 0);
 	      	SUM : out std_logic_vector(31 downto 0);
 	      	V : out std_logic);
@@ -27,7 +27,7 @@ architecture behavioral of mycpu is
 
 	component alu is
      	port( 
-		opcode:         IN STD_LOGIC_VECTOR (2 downto 0);
+		      opcode:         IN STD_LOGIC_VECTOR (2 downto 0);
 	        A, B:           IN STD_LOGIC_VECTOR (31 downto 0);
 	        aluout:         OUT STD_LOGIC_VECTOR (31 downto 0);
 	        negative:       OUT STD_LOGIC;
@@ -57,14 +57,14 @@ architecture behavioral of mycpu is
 		);
 	end component;
 
-	component  Extender
+	component  Extender is
 	port(
     		Instruction : in std_logic_vector(15 downto 0);
 	   	ExtType : in std_logic;
 		  Im32 : out std_logic_vector(31 downto 0));
 	end component;
 
-	component pipelinecontroller IS
+	component pipelinecontroller is
 	PORT
 	(
     signal ExtType : out std_logic;
@@ -78,8 +78,8 @@ architecture behavioral of mycpu is
 
 	component MemControl is 
 	port(
-		--IMemory
-        	PC : in std_logic_vector(31 downto 0);
+		     --IMemory
+        	 PC : in std_logic_vector(31 downto 0);
 	        Instruction : out std_logic_vector(31 downto 0);	               
 	        --DMemory
 	        Daddress : in std_logic_vector(31 downto 0);
@@ -138,9 +138,10 @@ architecture behavioral of mycpu is
 signal PC,Instruction,MemoryData : std_logic_vector(31 downto 0);
 
 --Internal Signal declarations
-signal memoryAddress : std_logic_vector(15 downto 0);
+signal VarLatRAMAddress : std_logic_vector(15 downto 0);
+signal VarLatRAMData : std_logic_vector (31 downto 0);
 
-signal ExtType,memwait: std_logic;
+signal ExtType,memwait,imemReadEn,StallArb,iRdenArb: std_logic;
 signal WriteEnable : std_logic;
 signal RegDst : std_logic;
 signal AluSrc : std_logic;
@@ -165,6 +166,7 @@ signal BusA_stg3,BusB_stg3,PCP4_stg3, Instruction_stg3,Im32_stg3 : std_logic_vec
 signal ExC_stg3,MEMC_stg3 :std_logic_vector( 4 downto 0);
 signal WBC_stg3 : std_logic_vector(2 downto 0);
 -- Stage 4
+signal rtd_stg4 : std_logic_vector (4 downto 0);
 signal Instruction_stg4,PCP4_stg4 : std_logic_vector(31 downto 0);
 signal zero_stg4 : std_logic;
 signal MEMC_stg4 :std_logic_vector( 4 downto 0);
@@ -191,14 +193,22 @@ begin
   Port map (ExtType,ExC,MemC,WBC,Instruction_stg2(31 downto 26),Instruction_stg2(5 downto 0));
  
   ADDPC4 : a32bitaddr
-  Port map(PC,x"00000004",PCP4,over1);
+  Port map(PC,x"00000004",PCP4,);
 
   ADDBR : a32bitaddr
   Port map(PCP4_stg3,shifted, PCJmp,over2);    
     
   ExBlock : Extender
   Port map(Instruction_stg2(15 downto 0),ExtType,Im32);
-
+  
+  DataCache: dcache
+  Port map(CLK,nReset,);
+  
+  InstructionCache: icache
+  Port map(CLK,nReset,imemReadEn,Stalli,PC,Instruction,StallArb,iRdenArb,PCArb,InstructionArb);
+  
+  MemoryControllerBlock: MemControl 
+  Port map(PCArb,InstructionArb,dmemAddrArb,dmemDataWriteArb,WrenArb,RdenArb,dmemDataRead,VarLatRAMAddressArb,VarLatRAMDataArb,ramQ,ramState,StallArb);
   
   --Mux Regdst
   with RegDst select
@@ -295,9 +305,9 @@ begin
 		BusA_stg3 <= "00000";
 	 	BusB_stg3 <= "00000";
 		Im32_stg3 <= x"00000000";
-		ExC_stg3 <= x"00";
-		WBC_stg3 <= x"00";				
-		MEMC_stg3 <= x"00";		
+		ExC_stg3 <= x"0";
+		WBC_stg3 <= "000";				
+		MEMC_stg3 <= x"0";		
 		Instruction_stg3 <=  x"00000000";		
 		PCP4_stg3 <=  x"00000000";
 	elsif (rising_edge(CLK))and(Stall = '0') then
@@ -305,9 +315,9 @@ begin
 			BusA_stg3 <= "00000";
 		 	BusB_stg3 <= "00000";
 			Im32_stg3 <= x"00000000";
-			ExC_stg3 <= x"00";
-			WBC_stg3 <= x"00";				
-			MEMC_stg3 <= x"00";		
+			ExC_stg3 <= x"0";
+			WBC_stg3 <= "000";				
+			MEMC_stg3 <= x"0";		
 			Instruction_stg3 <=  x"00000000";		
 			PCP4_stg3 <=  x"00000000";
 		else
@@ -328,24 +338,27 @@ begin
 		PCP4_stg4 <= x"00000000";
 		zero_stg4 <= '0';
 		
-		WBC_stg4 <= "00";
+		WBC_stg4 <= "000";
 		Instruction_stg4 <=  x"00000000";
-		MEMC_stg4 <= x"000";
+		MEMC_stg4 <= x"0";
+		BusB_stg4 <= x"00000000";
 		rtd_stg4 <= "00000";
 	elsif (rising_edge(CLK))and(Stall = '0') then
 		if(nResetSynch = '0') then
 			PCP4_stg4 <= x"00000000";
 			zero_stg4 <= '0';
-			WBC_stg4 <= "00";
+			WBC_stg4 <= "000";
 			Instruction_stg4 <=  x"00000000";
-			MEMC_stg4 <= x"000";
+			MEMC_stg4 <= x"0";
+			BusB_stg4 <= x"00000000";
 			rtd_stg4 <= "00000";
 		else
 			PCP4_stg4 <= PCP4_stg3;
 			zero_stg4 <= zero;
 			WBC_stg4 <= WBC_stg3;
 			Instruction_stg4 <= Instruction_stg3;
-			MEMC_stg4 <= MEM3;
+			MEMC_stg4 <= MEMC_stg3;
+			BusB_stg4 <= BusB_stg3;
 			rtd_stg4 <= rtd;
 		end if;
 	end if;
@@ -353,14 +366,14 @@ begin
      MEMWBRegister: process(CLK,nReset,nResetSynch_S45,Stall_S45)		--Stage 4-5
 	begin
 	if (nReset = '0') then	--asynch reset
-		WBC_stg5 <= "00";
+		WBC_stg5 <= "000";
 		MemoryData_stg5 <= "00";
 		ALUout_stg5 <= x"00000000";
 		Instruction_stg5 <=  x"00000000";
 		rtd_stg5 <= "00000";
 	elsif (rising_edge(CLK))and(Stall = '0') then
 		if(nResetSynch = '0') then	--synch reset	
-			WBC_stg5 <= x"00";
+			WBC_stg5 <= "000";
 			MemoryData_stg5 <="00"; 
 			ALUout_stg5 <= x"00000000";
 			Instruction_stg5 <=  x"00000000";
@@ -373,17 +386,19 @@ begin
 		end if;
 	end if;
      end process;
-     
-     with haltI select
-      memoryAddress <= dumpAddr when '1',ALUout(15 downto 0) when others;
 
 
+  Stall <= Stalli or Stalld;
+  ramWen<=MemC_stg4(2);
+  ramRen<=MemC_stg4(1);
+  ramAddr <= VarLatRAMAddress;
+  ramData <= VarLatRAMData;
   MemOutMux <= WBC_stg5(1);
   lui <=WBC_stg5(0);
   imemAddr <= PC;
   imemData <= Instruction;
   dmemDataRead <= MemoryData;
-  dmemDataWrite <= BusB;
+  dmemDataWrite <= BusB_stg4;
   dmemAddr <= ALUout;
   rd <= Instruction_stg3(15 downto 11);
   rt <= Instruction_stg3(20 downto 16);

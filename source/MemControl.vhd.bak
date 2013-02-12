@@ -21,8 +21,6 @@ entity MemControl is
         --to Ram
         address : out std_logic_vector(15 downto 0);
         data : out std_logic_vector(31 downto 0);
-        wrenO : out std_logic;
-        rdenO : out std_logic;
         q : in std_logic_vector(31 downto 0);
         memstate : in std_logic_vector(1 downto 0);
         
@@ -38,53 +36,63 @@ architecture behavioral of MemControl is
   constant MEMBUSY        : std_logic_vector              := "01";
   constant MEMACCESS      : std_logic_vector              := "10";
   constant MEMERROR       : std_logic_vector              := "11";
+  signal lastMemData,lastInstruction,MemoryDataI,InstructionI : std_logic_vector(31 downto 0);
+
 
 begin
   
 
-
-Instruction <= q;
-MemoryData <= q;
+with wren  select
+  MemoryData <= q when '1',lastMemData when others;
+  
+with wren select
+  MemoryDataI <= q when '1',lastMemData when others;
+  
+with  (wren ) select
+  Instruction <= q when '0', lastInstruction when others;
+  
+with  (wren) select
+  InstructionI <= q when '0', lastInstruction when others;  
+lastMemData <= MemoryDataI;
+lastInstruction <= InstructionI;
 nextstatelogic : process(wren,rden,memstate)
 begin
   stall <= '0';
   address <= PC(15 downto 0);
   data <= PC;
-  wrenO <= '0';
-  rdenO <= '0';
+
   
   
     case memstate is
     when MEMFREE => 
-      if(wren = '1' or rden = '1') then
+      if(wren = '1' ) then
           address <= Daddress (15 downto 0);
           data <= writeData;
-          wrenO <= wren;
-          rdenO <= rden;
- 
+
       
       end if; 
     when MEMBUSY =>
      
-      if(wren = '1' or rden = '1') then
+      if(wren = '1' ) then
           address <= Daddress (15 downto 0);
           data <= writeData;
-          wrenO <= wren;
-          rdenO <= rden;
+
     
 
       end if; 
       stall <= '1';
   when MEMACCESS =>
-      if(wren = '1' or rden = '1') then
+      if(wren = '1' ) then
           address <= Daddress (15 downto 0);
           data <= writeData;
-          wrenO <= wren;
-          rdenO <= rden;
+
        
  
       end if; 
     when MEMERROR =>
+      address <= x"0000";
+      data <= x"00000000";
+    when OTHERS =>
 
  
 end case;
