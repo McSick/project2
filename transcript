@@ -5411,3 +5411,1396 @@ run 2 ms
 # writing address 31744
 # writing address 32256
 # dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/ForwardUnit.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ForwardUnit
+# -- Compiling architecture behavioral of ForwardUnit
+restart -f
+# Loading work.mycpu(behavioral)
+# Loading work.forwardunit(behavioral)
+add wave -position insertpoint  \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/MemRD \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/ExRD \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/MemWE \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/ExWE \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/IdRT \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/IdRS \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/ForwardA \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/ForwardB
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Halted, cycles=124
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+restart -f
+# Loading work.mycpu(behavioral)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_cpu/DUT/theCPU/rtd_stg3'. 
+run 2ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Halted, cycles=124
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Halted, cycles=118
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+restart -f
+# Loading work.mycpu(behavioral)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Halted, cycles=118
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/mycpu.vhd(294): near "with": expecting <= or :=
+# ** Error: /home/ecegrid/a/mg204/ece437/project2/source/mycpu.vhd(467): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/mycpu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mycpu
+# -- Compiling architecture behavioral of mycpu
+restart -f
+# Loading work.mycpu(behavioral)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Halted, cycles=118
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+# Load canceled
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/VarLatRAM.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity VarLatRAM
+# -- Compiling architecture VarLatRAM_arch of VarLatRAM
+restart -f
+# Loading work.varlatram(varlatram_arch)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Cycle #160
+# Cycle #192
+# Cycle #224
+# Cycle #256
+# Cycle #288
+# Cycle #320
+# Cycle #352
+# Cycle #384
+# Cycle #416
+# Cycle #448
+# Cycle #480
+# Cycle #512
+# Cycle #544
+# Cycle #576
+# Cycle #608
+# Cycle #640
+# Cycle #672
+# Cycle #704
+# Cycle #736
+# Cycle #768
+# Cycle #800
+# Cycle #832
+# Cycle #864
+# Cycle #896
+# Cycle #928
+# Cycle #960
+# Cycle #992
+# Cycle #1024
+# Cycle #1056
+# Cycle #1088
+# Cycle #1120
+# Cycle #1152
+# Cycle #1184
+# Cycle #1216
+# Cycle #1248
+# Cycle #1280
+# Cycle #1312
+# Cycle #1344
+# Cycle #1376
+# Cycle #1408
+# Cycle #1440
+# Cycle #1472
+# Cycle #1504
+# Cycle #1536
+# Cycle #1568
+# Cycle #1600
+# Cycle #1632
+# Cycle #1664
+# Cycle #1696
+# Cycle #1728
+# Cycle #1760
+# Cycle #1792
+# Cycle #1824
+# Cycle #1856
+# Cycle #1888
+# Cycle #1920
+# Cycle #1952
+# Cycle #1984
+# Cycle #2016
+# Cycle #2048
+# Cycle #2080
+# Cycle #2112
+# Cycle #2144
+# Cycle #2176
+# Cycle #2208
+# Cycle #2240
+# Cycle #2272
+# Cycle #2304
+# Cycle #2336
+# Cycle #2368
+# Cycle #2400
+# Cycle #2432
+# Cycle #2464
+# Cycle #2496
+# Cycle #2528
+# Cycle #2560
+# Cycle #2592
+# Cycle #2624
+# Cycle #2656
+# Cycle #2688
+# Cycle #2720
+# Cycle #2752
+# Cycle #2784
+# Cycle #2816
+# Cycle #2848
+# Cycle #2880
+# Cycle #2912
+# Cycle #2944
+# Cycle #2976
+# Cycle #3008
+# Cycle #3040
+# Cycle #3072
+# Cycle #3104
+# Cycle #3136
+# Cycle #3168
+# Cycle #3200
+# Cycle #3232
+# Cycle #3264
+# Cycle #3296
+# Cycle #3328
+# Cycle #3360
+# Cycle #3392
+# Cycle #3424
+# Cycle #3456
+# Cycle #3488
+# Cycle #3520
+# Cycle #3552
+# Cycle #3584
+# Cycle #3616
+# Cycle #3648
+# Cycle #3680
+# Cycle #3712
+# Cycle #3744
+# Cycle #3776
+# Cycle #3808
+# Cycle #3840
+# Cycle #3872
+# Cycle #3904
+# Cycle #3936
+# Cycle #3968
+# Cycle #4000
+# Cycle #4032
+# Cycle #4064
+# Cycle #4096
+# Cycle #4128
+# Cycle #4160
+# Cycle #4192
+# Cycle #4224
+# Cycle #4256
+# Cycle #4288
+# Cycle #4320
+# Cycle #4352
+# Cycle #4384
+# Cycle #4416
+# Cycle #4448
+# Cycle #4480
+# Cycle #4512
+# Cycle #4544
+# Cycle #4576
+# Cycle #4608
+# Cycle #4640
+# Cycle #4672
+# Cycle #4704
+# Cycle #4736
+# Cycle #4768
+# Cycle #4800
+# Cycle #4832
+# Cycle #4864
+# Cycle #4896
+# Cycle #4928
+# Cycle #4960
+# Cycle #4992
+# Cycle #5024
+# Cycle #5056
+# Cycle #5088
+# Cycle #5120
+# Cycle #5152
+# Cycle #5184
+# Cycle #5216
+# Cycle #5248
+# Cycle #5280
+# Cycle #5312
+# Cycle #5344
+# Cycle #5376
+# Cycle #5408
+# Cycle #5440
+# Cycle #5472
+# Cycle #5504
+# Cycle #5536
+# Cycle #5568
+# Cycle #5600
+# Cycle #5632
+# Cycle #5664
+# Cycle #5696
+# Cycle #5728
+# Cycle #5760
+# Cycle #5792
+# Cycle #5824
+# Cycle #5856
+# Cycle #5888
+# Cycle #5920
+# Cycle #5952
+# Cycle #5984
+# Cycle #6016
+# Cycle #6048
+# Cycle #6080
+# Cycle #6112
+# Cycle #6144
+# Cycle #6176
+# Cycle #6208
+# Cycle #6240
+# Cycle #6272
+# Cycle #6304
+# Cycle #6336
+# Cycle #6368
+# Cycle #6400
+# Cycle #6432
+# Cycle #6464
+# Cycle #6496
+# Cycle #6528
+# Cycle #6560
+# Cycle #6592
+# Cycle #6624
+# Cycle #6656
+# Cycle #6688
+# Cycle #6720
+# Cycle #6752
+# Cycle #6784
+# Cycle #6816
+# Cycle #6848
+# Cycle #6880
+# Cycle #6912
+# Cycle #6944
+# Cycle #6976
+# Cycle #7008
+# Cycle #7040
+# Cycle #7072
+# Cycle #7104
+# Cycle #7136
+# Cycle #7168
+# Cycle #7200
+# Cycle #7232
+# Cycle #7264
+# Cycle #7296
+# Cycle #7328
+# Cycle #7360
+# Cycle #7392
+# Cycle #7424
+# Cycle #7456
+# Cycle #7488
+# Cycle #7520
+# Cycle #7552
+# Cycle #7584
+# Cycle #7616
+# Cycle #7648
+# Cycle #7680
+# Cycle #7712
+# Cycle #7744
+# Cycle #7776
+# Cycle #7808
+# Cycle #7840
+# Cycle #7872
+# Cycle #7904
+# Cycle #7936
+# Cycle #7968
+# Cycle #8000
+# Cycle #8032
+# Cycle #8064
+# Cycle #8096
+# Cycle #8128
+# Cycle #8160
+# Cycle #8192
+# Cycle #8224
+# Cycle #8256
+# Cycle #8288
+# Cycle #8320
+# Cycle #8352
+# Cycle #8384
+# Cycle #8416
+# Cycle #8448
+# Cycle #8480
+# Cycle #8512
+# Cycle #8544
+# Cycle #8576
+# Cycle #8608
+# Cycle #8640
+# Cycle #8672
+# Cycle #8704
+# Cycle #8736
+# Cycle #8768
+# Cycle #8800
+# Cycle #8832
+# Cycle #8864
+# Cycle #8896
+# Cycle #8928
+# Cycle #8960
+# Cycle #8992
+# Cycle #9024
+# Cycle #9056
+# Cycle #9088
+# Cycle #9120
+# Cycle #9152
+# Cycle #9184
+# Cycle #9216
+# Cycle #9248
+# Cycle #9280
+# Cycle #9312
+# Cycle #9344
+# Cycle #9376
+# Cycle #9408
+# Cycle #9440
+# Cycle #9472
+# Cycle #9504
+# Cycle #9536
+# Cycle #9568
+# Cycle #9600
+# Cycle #9632
+# Cycle #9664
+# Cycle #9696
+# Cycle #9728
+# Cycle #9760
+# Cycle #9792
+# Cycle #9824
+# Cycle #9856
+# Cycle #9888
+# Cycle #9920
+# Cycle #9952
+# Cycle #9984
+# Cycle #10016
+# Cycle #10048
+# Cycle #10080
+# Cycle #10112
+# Cycle #10144
+# Cycle #10176
+# Cycle #10208
+# Cycle #10240
+# Cycle #10272
+# Cycle #10304
+# Cycle #10336
+# Cycle #10368
+# Cycle #10400
+# Cycle #10432
+# Cycle #10464
+# Cycle #10496
+# Cycle #10528
+# Cycle #10560
+# Cycle #10592
+# Cycle #10624
+# Cycle #10656
+# Cycle #10688
+# Cycle #10720
+# Cycle #10752
+# Cycle #10784
+# Cycle #10816
+# Cycle #10848
+# Cycle #10880
+# Cycle #10912
+# Cycle #10944
+# Cycle #10976
+# Cycle #11008
+# Cycle #11040
+# Cycle #11072
+# Cycle #11104
+# Cycle #11136
+# Cycle #11168
+# Cycle #11200
+# Cycle #11232
+# Cycle #11264
+# Cycle #11296
+# Cycle #11328
+# Cycle #11360
+# Cycle #11392
+# Cycle #11424
+# Cycle #11456
+# Cycle #11488
+# Cycle #11520
+# Cycle #11552
+# Cycle #11584
+# Cycle #11616
+# Cycle #11648
+# Cycle #11680
+# Cycle #11712
+# Cycle #11744
+# Cycle #11776
+# Cycle #11808
+# Cycle #11840
+# Cycle #11872
+# Cycle #11904
+# Cycle #11936
+# Cycle #11968
+# Cycle #12000
+# Cycle #12032
+# Cycle #12064
+# Cycle #12096
+# Cycle #12128
+# Cycle #12160
+# Cycle #12192
+# Cycle #12224
+# Cycle #12256
+# Cycle #12288
+# Cycle #12320
+# Cycle #12352
+# Cycle #12384
+# Cycle #12416
+# Cycle #12448
+# Cycle #12480
+# Cycle #12512
+# Cycle #12544
+# Cycle #12576
+# Cycle #12608
+# Cycle #12640
+# Cycle #12672
+# Cycle #12704
+# Cycle #12736
+# Cycle #12768
+# Cycle #12800
+# Cycle #12832
+# Cycle #12864
+# Cycle #12896
+# Cycle #12928
+# Cycle #12960
+# Cycle #12992
+# Cycle #13024
+# Cycle #13056
+# Cycle #13088
+# Cycle #13120
+# Cycle #13152
+# Cycle #13184
+# Cycle #13216
+# Cycle #13248
+# Cycle #13280
+# Cycle #13312
+# Cycle #13344
+# Cycle #13376
+# Cycle #13408
+# Cycle #13440
+# Cycle #13472
+# Cycle #13504
+# Cycle #13536
+# Cycle #13568
+# Cycle #13600
+# Cycle #13632
+# Cycle #13664
+# Cycle #13696
+# Cycle #13728
+# Cycle #13760
+# Cycle #13792
+# Cycle #13824
+# Cycle #13856
+# Cycle #13888
+# Cycle #13920
+# Cycle #13952
+# Cycle #13984
+# Cycle #14016
+# Cycle #14048
+# Cycle #14080
+# Cycle #14112
+# Cycle #14144
+# Cycle #14176
+# Cycle #14208
+# Cycle #14240
+# Cycle #14272
+# Cycle #14304
+# Cycle #14336
+# Cycle #14368
+# Cycle #14400
+# Cycle #14432
+# Cycle #14464
+# Cycle #14496
+# Cycle #14528
+# Cycle #14560
+# Cycle #14592
+# Cycle #14624
+# Cycle #14656
+# Cycle #14688
+# Cycle #14720
+# Cycle #14752
+# Cycle #14784
+# Cycle #14816
+# Cycle #14848
+# Cycle #14880
+# Cycle #14912
+# Cycle #14944
+# Cycle #14976
+# Cycle #15008
+# Cycle #15040
+# Cycle #15072
+# Cycle #15104
+# Cycle #15136
+# Cycle #15168
+# Cycle #15200
+# Cycle #15232
+# Cycle #15264
+# Cycle #15296
+# Cycle #15328
+# Cycle #15360
+# Cycle #15392
+# Cycle #15424
+# Cycle #15456
+# Cycle #15488
+# Cycle #15520
+# Cycle #15552
+# Cycle #15584
+# Cycle #15616
+# Cycle #15648
+# Cycle #15680
+# Cycle #15712
+# Cycle #15744
+# Cycle #15776
+# Cycle #15808
+# Cycle #15840
+# Cycle #15872
+# Cycle #15904
+# Cycle #15936
+# Cycle #15968
+# Cycle #16000
+# Cycle #16032
+# Cycle #16064
+# Cycle #16096
+# Cycle #16128
+# Cycle #16160
+# Cycle #16192
+# Cycle #16224
+# Cycle #16256
+# Cycle #16288
+# Cycle #16320
+# Cycle #16352
+# Cycle #16384
+# Cycle #16416
+# Cycle #16448
+# Cycle #16480
+# Cycle #16512
+# Cycle #16544
+# Cycle #16576
+# Cycle #16608
+# Cycle #16640
+# Cycle #16672
+# Cycle #16704
+# Cycle #16736
+# Cycle #16768
+# Cycle #16800
+# Cycle #16832
+# Cycle #16864
+# Cycle #16896
+# Cycle #16928
+# Cycle #16960
+# Cycle #16992
+# Cycle #17024
+# Cycle #17056
+# Cycle #17088
+# Cycle #17120
+# Cycle #17152
+# Cycle #17184
+# Cycle #17216
+# Cycle #17248
+# Cycle #17280
+# Cycle #17312
+# Cycle #17344
+# Cycle #17376
+# Cycle #17408
+# Cycle #17440
+# Cycle #17472
+# Cycle #17504
+# Cycle #17536
+# Cycle #17568
+# Cycle #17600
+# Cycle #17632
+# Cycle #17664
+# Cycle #17696
+# Cycle #17728
+# Cycle #17760
+# Cycle #17792
+# Cycle #17824
+# Cycle #17856
+# Cycle #17888
+# Cycle #17920
+# Cycle #17952
+# Cycle #17984
+# Cycle #18016
+# Cycle #18048
+# Cycle #18080
+# Cycle #18112
+# Cycle #18144
+# Cycle #18176
+# Cycle #18208
+# Cycle #18240
+# Cycle #18272
+# Cycle #18304
+# Cycle #18336
+# Cycle #18368
+# Cycle #18400
+# Cycle #18432
+# Cycle #18464
+# Cycle #18496
+# Cycle #18528
+# Cycle #18560
+# Cycle #18592
+# Cycle #18624
+# Cycle #18656
+# Cycle #18688
+# Cycle #18720
+# Cycle #18752
+# Cycle #18784
+# Cycle #18816
+# Cycle #18848
+# Cycle #18880
+# Cycle #18912
+# Cycle #18944
+# Cycle #18976
+# Cycle #19008
+# Cycle #19040
+# Cycle #19072
+# Cycle #19104
+# Cycle #19136
+# Cycle #19168
+# Cycle #19200
+# Cycle #19232
+# Cycle #19264
+# Cycle #19296
+# Cycle #19328
+# Cycle #19360
+# Cycle #19392
+# Cycle #19424
+# Cycle #19456
+# Cycle #19488
+# Cycle #19520
+# Cycle #19552
+# Cycle #19584
+# Cycle #19616
+# Cycle #19648
+# Cycle #19680
+# Cycle #19712
+# Cycle #19744
+# Cycle #19776
+# Cycle #19808
+# Cycle #19840
+# Cycle #19872
+# Cycle #19904
+# Cycle #19936
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/VarLatRAM.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity VarLatRAM
+# -- Compiling architecture VarLatRAM_arch of VarLatRAM
+restart -f
+# Loading work.varlatram(varlatram_arch)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Halted, cycles=42
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/VarLatRAM.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity VarLatRAM
+# -- Compiling architecture VarLatRAM_arch of VarLatRAM
+restart -f
+# Loading work.varlatram(varlatram_arch)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Halted, cycles=118
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Halted, cycles=100
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Halted, cycles=118
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory

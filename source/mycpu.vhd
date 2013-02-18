@@ -150,6 +150,20 @@ architecture behavioral of mycpu is
   Hazard : out std_logic);
 end component;
 
+component ForwardUnit is
+    port(
+    MemRD : in std_logic_vector(4 downto 0);
+    ExRD : in std_logic_vector(4 downto 0);
+    MemWE : in std_logic;
+    ExWE  : in std_logic;
+    IdRT : in std_logic_vector(4 downto 0);
+    IdRS : in std_logic_vector(4 downto 0);
+    ForwardA : out std_logic_vector(1 downto 0);
+    ForwardB : out std_logic_vector(1 downto 0)
+  );
+  
+end component;
+
 signal PC,Instruction,dmemAddr: std_logic_vector(31 downto 0);
 
 --Internal Signal declarations
@@ -175,12 +189,17 @@ signal PCP4_stg2, Instruction_stg2 : std_logic_vector(31 downto 0);
 signal EXC,MEMC,EXC_Hazard,MEMC_Hazard :std_logic_vector( 4 downto 0);
 signal WBC,WBC_Hazard : std_logic_vector(2 downto 0);
 -- Stage 3
-signal BusA_stg3,BusB_stg3,PCP4_stg3, Instruction_stg3,Im32_stg3 : std_logic_vector(31 downto 0);
-signal EXC_stg3,MEMC_stg3,rtd_stg3 :std_logic_vector( 4 downto 0);
+signal BusA_stg3,BusB_stg3,BusA_stg3_00,BusB_stg3_00,PCP4_stg3, Instruction_stg3,Im32_stg3 : std_logic_vector(31 downto 0);
+signal EXC_stg3,MEMC_stg3 :std_logic_vector( 4 downto 0);
 signal WBC_stg3 : std_logic_vector(2 downto 0);
+
+--Forwarding Unit
+
+signal ForwardA,ForwardB : std_logic_vector(1 downto 0);
+
 -- Stage 4
 signal rtd_stg4 : std_logic_vector (4 downto 0);
-signal Instruction_stg4,PCP4_stg4,ALUout_stg4,BusB_stg4 : std_logic_vector(31 downto 0);
+signal Instruction_stg4,PCP4_stg4,ALUout_stg4,BusB_stg4,Forward_stg4 : std_logic_vector(31 downto 0);
 signal zero_stg4 : std_logic;
 signal MEMC_stg4 :std_logic_vector( 4 downto 0);
 signal WBC_stg4 : std_logic_vector(2 downto 0);
@@ -197,6 +216,10 @@ signal nResetSynch_S12,nResetSynch_S23,nResetSynch_S34,nResetSynch_S45 : std_log
 begin
 
 
+
+  FWDUNIT : ForwardUnit
+  Port map(rtd_stg5,rtd_stg4,WBC_stg5(2),WBC_stg4(2),Instruction_stg3(20 downto 16),Instruction_stg3(25 downto 21),ForwardA,ForwardB);
+    
   HDetector : HazardDetector
   Port map(nReset,clk,MEMC_stg3(1),Instruction_stg3(20 downto 16),rs,rt,PCSTALL,IF_IDSTALL,Hazard);
     
@@ -240,6 +263,9 @@ begin
         
   with lui select
     WriteDataReg2 <= Instruction_stg5(15 downto 0) & x"0000" when  '1', WriteDataReg when others;
+    
+  with WBC_stg4(2) select
+    Forward_stg4 <= Instruction_stg4(15 downto 0) & x"0000" when '1', ALUout_stg4 when others;
 
   --with (HaltI or memwait) select
   with (HaltI or Stall or PCSTALL or Rden or Wren) select
@@ -261,6 +287,16 @@ begin
     
   with Hazard select
     WBC <= "000" when '1', WBC_Hazard when others;
+    
+    
+ 
+  --Forwarding Muxes
+    with ForwardA select
+      BusA_stg3 <=  Forward_stg4 when "10",WriteDataReg2 when "01",BusA_stg3_00 when others;
+    
+   --Forwarding Muxes
+    with ForwardB select
+      BusB_stg3 <=  Forward_stg4 when "10",WriteDataReg2 when "01",BusB_stg3_00 when others;
 	
   branchand :  process(Instruction_stg5)
 	begin
@@ -301,8 +337,8 @@ begin
      IDEXRegister: process(CLK,nReset,nResetSynch_S23,Stall_S23)		--Stage 2-3
 	begin
 	if (nReset = '0') then
-		BusA_stg3 <= x"00000000";
-	 	BusB_stg3 <= x"00000000";
+		BusA_stg3_00 <= x"00000000";
+	 	BusB_stg3_00 <= x"00000000";
 		Im32_stg3 <= x"00000000";
 		EXC_stg3 <= "00000";
 		WBC_stg3 <= "000";				
@@ -311,8 +347,8 @@ begin
 		PCP4_stg3 <=  x"00000000";
 	elsif (rising_edge(CLK))and(Stall_S23 = '0') then
 		if(nResetSynch_S23 = '0') then
-			BusA_stg3 <= x"00000000";
-		 	BusB_stg3 <= x"00000000";
+			BusA_stg3_00 <= x"00000000";
+		 	BusB_stg3_00 <= x"00000000";
 			Im32_stg3 <= x"00000000";
 			EXC_stg3 <= "00000";
 			WBC_stg3 <= "000";				
@@ -320,8 +356,8 @@ begin
 			Instruction_stg3 <=  x"00000000";		
 			PCP4_stg3 <=  x"00000000";
 		else
-			BusA_stg3 <= BusA;
-		 	BusB_stg3 <= BusB;
+			BusA_stg3_00 <= BusA;
+		 	BusB_stg3_00 <= BusB;
 			Im32_stg3 <= Im32;
 			EXC_stg3 <= EXC;
 			WBC_stg3 <= WBC;
