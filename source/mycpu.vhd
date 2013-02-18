@@ -69,7 +69,7 @@ architecture behavioral of mycpu is
 		nReset : std_logic;
 		ExtType : out std_logic;
 		EXC : out std_logic_vector(4 downto 0);
-		MEMC : out std_logic_vector(4 downto 0);
+		MEMC : out std_logic_vector(5 downto 0);
 		WBC : out std_logic_vector(2 downto 0);
 		opcode :  in std_logic_vector(5 downto 0);
 		funct :  in std_logic_vector(5 downto 0)
@@ -175,7 +175,7 @@ signal RegDst : std_logic;
 signal AluSrc : std_logic;
 signal ALUcntr : std_logic_vector(2 downto 0);
 signal MemOutMux,lui : std_logic;
-signal Branch : std_logic;
+signal Branch,branch_taken : std_logic;
 signal Jump,HaltI,BNE : std_logic;
 Signal WriteDataReg : std_logic_vector(31 downto 0);
 signal zero,overflow : std_logic;
@@ -186,29 +186,34 @@ signal rs,rt,rtd : std_logic_vector(4 downto 0);
 signal PCSTALL,IF_IDSTALL,Hazard : std_logic;
 -- Stage 2
 signal PCP4_stg2, Instruction_stg2 : std_logic_vector(31 downto 0);
-signal EXC,MEMC,EXC_Hazard,MEMC_Hazard :std_logic_vector( 4 downto 0);
+signal EXC,EXC_Hazard :std_logic_vector( 4 downto 0);
+signal MEMC,MEMC_Hazard : std_logic_vector(5 downto 0);
 signal WBC,WBC_Hazard : std_logic_vector(2 downto 0);
 -- Stage 3
 signal BusA_stg3,BusB_stg3,BusA_stg3_00,BusB_stg3_00,PCP4_stg3, Instruction_stg3,Im32_stg3 : std_logic_vector(31 downto 0);
-signal EXC_stg3,MEMC_stg3 :std_logic_vector( 4 downto 0);
+signal EXC_stg3,rtd_stg3 :std_logic_vector( 4 downto 0);
+signal MEMC_stg3 : std_logic_vector(5 downto 0);
 signal WBC_stg3 : std_logic_vector(2 downto 0);
-
+signal JAL_stg3 : std_logic;
 --Forwarding Unit
 
 signal ForwardA,ForwardB : std_logic_vector(1 downto 0);
 
 -- Stage 4
 signal rtd_stg4 : std_logic_vector (4 downto 0);
-signal Instruction_stg4,PCP4_stg4,ALUout_stg4,BusB_stg4,Forward_stg4 : std_logic_vector(31 downto 0);
-signal zero_stg4 : std_logic;
-signal MEMC_stg4 :std_logic_vector( 4 downto 0);
+signal Instruction_stg4,PCP4_stg4,ALUout_stg4,BusB_stg4,Forward_stg4,ALUorPC : std_logic_vector(31 downto 0);
+signal zero_stg4,JAL : std_logic;
+signal MEMC_stg4 :std_logic_vector( 5 downto 0);
 signal WBC_stg4 : std_logic_vector(2 downto 0);
 -- Stage 5
-signal rtd_stg5 : std_logic_vector(4 downto 0);
+signal rtd_stg5,rtd_dst_reg : std_logic_vector(4 downto 0);
 signal Instruction_stg5,MemoryData_stg5,ALUout_stg5 : std_logic_vector(31 downto 0);
 signal Stall, Stall_S12,Stall_S23,Stall_S34,Stall_S45 : std_logic;
 signal WBC_stg5 : std_logic_vector(2 downto 0);
 signal nResetSynch_S12,nResetSynch_S23,nResetSynch_S34,nResetSynch_S45 : std_logic;
+
+
+--Trash Register
 
 --TYPE STATE_TYPE IS (s0 ,s1);
 --  Signal state,nextstate : STATE_TYPE;
@@ -268,10 +273,10 @@ begin
     Forward_stg4 <= Instruction_stg4(15 downto 0) & x"0000" when '1', ALUout_stg4 when others;
 
   --with (HaltI or memwait) select
-  with (HaltI or Stall or PCSTALL or Rden or Wren) select
+  with (HaltI or Stall or PCSTALL or Rden or Wren ) select
    NextPC <= PC when '1', AlmostPC when others;  
    
-  with ((Branch AND zero_stg4) or (BNE AND (not zero_stg4))) select
+  with branch_taken select
    BranchAddress <= PCJmp_stg4 when '1', PCP4 when others;
    
   with Jump select
@@ -283,7 +288,7 @@ begin
     EXC <= "00000" when '1', EXC_Hazard when others;
   
   with Hazard select
-    MEMC <="00000" when '1', MEMC_Hazard when others;
+    MEMC <="000000" when '1', MEMC_Hazard when others;
     
   with Hazard select
     WBC <= "000" when '1', WBC_Hazard when others;
@@ -297,6 +302,15 @@ begin
    --Forwarding Muxes
     with ForwardB select
       BusB_stg3 <=  Forward_stg4 when "10",WriteDataReg2 when "01",BusB_stg3_00 when others;
+      
+      
+
+  --JAl
+  with JAL_stg3 select
+    rtd_stg3 <= rtd when '0', "11111" when others;
+    
+  with JAL select
+    ALUorPC <=  ALUout_stg4 when '0', PCP4_stg4 when others;
 	
   branchand :  process(Instruction_stg5)
 	begin
@@ -342,7 +356,7 @@ begin
 		Im32_stg3 <= x"00000000";
 		EXC_stg3 <= "00000";
 		WBC_stg3 <= "000";				
-		MEMC_stg3 <= "00000";		
+		MEMC_stg3 <= "000000";		
 		Instruction_stg3 <=  x"00000000";		
 		PCP4_stg3 <=  x"00000000";
 	elsif (rising_edge(CLK))and(Stall_S23 = '0') then
@@ -352,7 +366,7 @@ begin
 			Im32_stg3 <= x"00000000";
 			EXC_stg3 <= "00000";
 			WBC_stg3 <= "000";				
-			MEMC_stg3 <= "00000";		
+			MEMC_stg3 <= "000000";		
 			Instruction_stg3 <=  x"00000000";		
 			PCP4_stg3 <=  x"00000000";
 		else
@@ -374,7 +388,7 @@ begin
 		zero_stg4 <= '0';	
 		WBC_stg4 <= "000";
 		Instruction_stg4 <=  x"00000000";
-		MEMC_stg4 <= "00000";
+		MEMC_stg4 <= "000000";
 		BusB_stg4 <= x"00000000";
 		rtd_stg4 <= "00000";
 		ALUout_stg4 <= x"00000000";
@@ -385,7 +399,7 @@ begin
 			zero_stg4 <= '0';
 			WBC_stg4 <= "000";
 			Instruction_stg4 <=  x"00000000";
-			MEMC_stg4 <= "00000";
+			MEMC_stg4 <= "000000";
 			BusB_stg4 <= x"00000000";
 			rtd_stg4 <= "00000";
 			ALUout_stg4 <= x"00000000";
@@ -397,7 +411,7 @@ begin
 			Instruction_stg4 <= Instruction_stg3;
 			MEMC_stg4 <= MEMC_stg3;
 			BusB_stg4 <= BusB_stg3;
-			rtd_stg4 <= rtd;
+			rtd_stg4 <= rtd_stg3;
 			ALUout_stg4 <= ALUout;
 			PCJmp_stg4 <= PCJmp;
 		end if;
@@ -421,7 +435,7 @@ begin
 		else	
 		  	WBC_stg5 <= WBC_stg4;
 			MemoryData_stg5 <= dmemDataRead;
-			ALUout_stg5 <= ALUout_stg4;
+			ALUout_stg5 <= ALUorPC;
 			Instruction_stg5 <= Instruction_stg4;
 			rtd_stg5 <= rtd_stg4;
 		end if;
@@ -432,10 +446,17 @@ begin
   Stall_S23<=Stall or HaltI;
   Stall_S34<=Stall or HaltI;
   Stall_S45<=HaltI;
-  nResetSynch_S12<='1';
-  nResetSynch_S23<='1';
-  nResetSynch_S34<='1';
-  nResetSynch_S45<='1';
+  
+    --If branch is taken Trashe Registers Control Signals (no ops)
+    with branch_taken or Jump select
+      nResetSynch_S12<= '0' when '1', '1' when others;
+    with branch_taken or Jump select
+      nResetSynch_S23<= '0' when '1', '1' when others;
+    with branch_taken or Jump select
+      nResetSynch_S34<= '0' when '1', '1' when others;
+   
+      nResetSynch_S45<= '1';
+ 
   ramAddr <= VarLatRAMAddress;
   ramData <= VarLatRAMData;    
   dmemDataWrite <= BusB_stg4;
@@ -456,6 +477,8 @@ begin
   Wren <= MEMC_stg4(2);
   Rden <= MEMC_stg4(1);
   Jump <= MEMC_stg4(0);
+  JAL <= MEMC_stg4(5);
+  JAL_stg3 <= MEMC_stg3(5);
   iRden <= '1'; -- not (Stall or Wren or Rden);
   ramWen <= wrenArbO;
   ramRen <= rdenArbO;
@@ -463,5 +486,5 @@ begin
   RegWriteEnable <= WBC_stg5(2);
   MemOutMux <= WBC_stg5(1);
   lui <=WBC_stg5(0);
-  
+  branch_taken <= ((Branch AND zero_stg4) or (BNE AND (not zero_stg4)));
 end behavioral;

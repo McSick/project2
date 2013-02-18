@@ -7,7 +7,7 @@ entity pipelinecontroller is
 		nReset : in std_logic;
 		ExtType : out std_logic;
 		EXC : out std_logic_vector(4 downto 0);
-		MEMC : out std_logic_vector(4 downto 0);
+		MEMC : out std_logic_vector(5 downto 0);
 		WBC : out std_logic_vector(2 downto 0);
 		opcode :  in std_logic_vector(5 downto 0);
 		funct :  in std_logic_vector(5 downto 0)
@@ -28,12 +28,13 @@ architecture Behavioral of pipelinecontroller is
   signal  Jump :  std_logic;
   signal  BNE :  std_logic;
   signal  LUI :  std_logic;
+  signal JAL : std_logic;
 
 
 begin
  
  EXC <= RegDst & AluSrc & ALU_cntrl;
- MEMC <= Branch & BNE &  MemWrite & MemRead & Jump;
+ MEMC <= JAL & Branch & BNE &  MemWrite & MemRead & Jump;
  WBC <= WriteEnable & MemOut & LUI;
  OpSelect : process(opcode,funct,nReset)
  begin
@@ -64,7 +65,10 @@ begin
    LUI <= '0';
    --1 when writing reading from memory
     MemRead <= '0';
+    --1 when saved address to 31
+    JAL <= '0';
 	else
+	  JAL <= '0';
     --1 when signed
     ExtType <= '0';
     
@@ -213,6 +217,8 @@ begin
       --JAL
       when  "000011" =>
         Jump <= '1';
+        JAL <= '1';
+         WriteEnable <= '1';
       when others =>
         
         
