@@ -47,11 +47,11 @@ architecture structural of alu is
 	                     SUM => internal_sub,
 	                     V => sub_overflow);
 	    ShifterL : shifter port map( A => A,
-          B => B(4 downto 0),
+          B => B(10 downto 6),
           shiftout => shiftoutL,
           mode => '1');
  	    ShifterR:  shifter port map( A => A,
-          B => B(4 downto 0),
+          B => B(10 downto 6),
           shiftout => shiftoutR,
           mode => '0');
 	                     

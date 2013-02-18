@@ -53,13 +53,13 @@ begin
    PCStall <= '1';
    IFSTALL <= '1';
    Hazard <= '1';
-   end case;
- when stalling2  =>
+   when stalling2  =>
    nextstate <= waiting;
    PCStall <= '0';
    IFSTALL <= '0';
    Hazard <= '0';
-   
+   end case;
+ 
 end process;
     
 end behavioral;

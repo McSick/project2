@@ -43,9 +43,10 @@ begin
     
     --1 when write to Registerfile
     WriteEnable <= '0';
+    
     --1 when using rd (r-type)
     RegDst <= '1';
-    --1 when rd type
+    --1 when Immediate? type
     AluSrc <= '0';
     --3 bit alu controler
     ALU_cntrl <= "000";
@@ -120,10 +121,12 @@ begin
               when  "000000" =>
                 ALU_cntrl <= "000";
                 WriteEnable <= '1';
+                 AluSrc <= '1';
               --SRL
               when  "000010" =>
                 ALU_cntrl <= "001";
                 WriteEnable <= '1';
+                 AluSrc <= '1';
               --SUBU 
               when  "100011" =>
                 ALU_cntrl <= "011";
@@ -142,6 +145,7 @@ begin
         RegDst <= '0';
         AluSrc <= '1';
         WriteEnable <= '1';
+        ExtType <= '1';
         
       --ANDI
       when  "001100" =>

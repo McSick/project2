@@ -6804,3 +6804,1075 @@ run 2 ms
 # writing address 31744
 # writing address 32256
 # dumped memory
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Halted, cycles=130
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/HazardDetector.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity HazardDetector
+# -- Compiling architecture behavioral of HazardDetector
+restart -f
+# Loading work.hazarddetector(behavioral)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Halted, cycles=130
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Cycle #160
+# Cycle #192
+# Cycle #224
+# Halted, cycles=226
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipelinecontroller
+# -- Compiling architecture Behavioral of pipelinecontroller
+restart -f
+# Loading work.pipelinecontroller(behavioral)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Cycle #160
+# Cycle #192
+# Cycle #224
+# Halted, cycles=226
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/pipelinecontroller.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipelinecontroller
+# -- Compiling architecture Behavioral of pipelinecontroller
+restart -f
+# Loading work.pipelinecontroller(behavioral)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Cycle #160
+# Cycle #192
+# Cycle #224
+# Halted, cycles=226
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+# Causality operation skipped due to absense of debug database file
+add wave -position insertpoint  \
+sim:/tb_cpu/DUT/theCPU/AluBlock/ShifterL/A \
+sim:/tb_cpu/DUT/theCPU/AluBlock/ShifterL/B \
+sim:/tb_cpu/DUT/theCPU/AluBlock/ShifterL/shiftout \
+sim:/tb_cpu/DUT/theCPU/AluBlock/ShifterL/mode \
+sim:/tb_cpu/DUT/theCPU/AluBlock/ShifterL/m1o \
+sim:/tb_cpu/DUT/theCPU/AluBlock/ShifterL/m2o \
+sim:/tb_cpu/DUT/theCPU/AluBlock/ShifterL/m3o \
+sim:/tb_cpu/DUT/theCPU/AluBlock/ShifterL/m4o \
+sim:/tb_cpu/DUT/theCPU/AluBlock/ShifterL/m5o
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Cycle #160
+# Cycle #192
+# Cycle #224
+# Halted, cycles=226
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/shifter.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity shifter
+# -- Compiling architecture combinational of shifter
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/alu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+restart -f
+# Loading work.alu(structural)
+# Loading work.shifter(combinational)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Cycle #160
+# Cycle #192
+# Cycle #224
+# Halted, cycles=226
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+vcom -reportprogress 300 -work work /home/ecegrid/a/mg204/ece437/project2/source/alu.vhd
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+restart -f
+# Loading work.alu(structural)
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Cycle #160
+# Cycle #192
+# Cycle #224
+# Halted, cycles=226
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Halted, cycles=130
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Halted, cycles=130
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Halted, cycles=148
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Halted, cycles=142
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+run 2 ms
+do /home/ecegrid/a/mg204/ece437/project2/cpu.do
+# ** Error: (vish-4014) No objects found matching '/tb_cpu/DUT/theCPU/rtd_stg3'.
+# Executing ONERROR command at macro /home/ecegrid/a/mg204/ece437/project2/cpu.do line 136
+restart -f
+add wave -position insertpoint  \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/MemRD \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/ExRD \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/MemWE \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/ExWE \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/IdRT \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/IdRS \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/ForwardA \
+sim:/tb_cpu/DUT/theCPU/FWDUNIT/ForwardB
+add wave -position insertpoint  \
+sim:/tb_cpu/DUT/theCPU/HDetector/nReset \
+sim:/tb_cpu/DUT/theCPU/HDetector/clk \
+sim:/tb_cpu/DUT/theCPU/HDetector/IdRE \
+sim:/tb_cpu/DUT/theCPU/HDetector/IdRt \
+sim:/tb_cpu/DUT/theCPU/HDetector/IfRs \
+sim:/tb_cpu/DUT/theCPU/HDetector/IfRt \
+sim:/tb_cpu/DUT/theCPU/HDetector/PCSTALL \
+sim:/tb_cpu/DUT/theCPU/HDetector/IFSTALL \
+sim:/tb_cpu/DUT/theCPU/HDetector/Hazard \
+sim:/tb_cpu/DUT/theCPU/HDetector/state \
+sim:/tb_cpu/DUT/theCPU/HDetector/nextstate
+Hazard Detector
+# invalid command name "Hazard"
+restart -f
+run 2 ms
+# starting memory initialization
+# initialized memory
+# Cycle #32
+# Cycle #64
+# Cycle #96
+# Cycle #128
+# Halted, cycles=142
+# writing address 0
+# writing address 512
+# writing address 1024
+# writing address 1536
+# writing address 2048
+# writing address 2560
+# writing address 3072
+# writing address 3584
+# writing address 4096
+# writing address 4608
+# writing address 5120
+# writing address 5632
+# writing address 6144
+# writing address 6656
+# writing address 7168
+# writing address 7680
+# writing address 8192
+# writing address 8704
+# writing address 9216
+# writing address 9728
+# writing address 10240
+# writing address 10752
+# writing address 11264
+# writing address 11776
+# writing address 12288
+# writing address 12800
+# writing address 13312
+# writing address 13824
+# writing address 14336
+# writing address 14848
+# writing address 15360
+# writing address 15872
+# writing address 16384
+# writing address 16896
+# writing address 17408
+# writing address 17920
+# writing address 18432
+# writing address 18944
+# writing address 19456
+# writing address 19968
+# writing address 20480
+# writing address 20992
+# writing address 21504
+# writing address 22016
+# writing address 22528
+# writing address 23040
+# writing address 23552
+# writing address 24064
+# writing address 24576
+# writing address 25088
+# writing address 25600
+# writing address 26112
+# writing address 26624
+# writing address 27136
+# writing address 27648
+# writing address 28160
+# writing address 28672
+# writing address 29184
+# writing address 29696
+# writing address 30208
+# writing address 30720
+# writing address 31232
+# writing address 31744
+# writing address 32256
+# dumped memory
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/ecegrid/a/mg204/ece437/project2/cpu.do

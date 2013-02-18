@@ -9,7 +9,7 @@ entity shifter is
 end shifter;
 
 architecture combinational of shifter is
-   signal m1o, m2o,m3o,m4o,m5o : std_logic_vector(31 downto 0);
+   signal m1o, m2o,m3o,m4o : std_logic_vector(31 downto 0);
     begin
       
       --mux1
