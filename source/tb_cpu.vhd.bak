@@ -305,7 +305,7 @@ begin
 			wait on halt;
 			if (halt = '1') then
 				-- open file for writing you may change filename
-				file_open(my_output, "memout.hex", write_mode);
+				file_open(my_output, "memdump.hex", write_mode);
 				-- set address
 				address <= std_logic_vector(to_unsigned(0, 16));
 				-- give address time to output

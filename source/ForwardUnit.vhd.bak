@@ -53,7 +53,7 @@ if(ExWE = '1' and (not (ExRD = "00000")) and (ExRD = IdRT)) then
   ForwardB <= "10";
 
 --MEM Hazard  
-elsif(MemWE = '1' and ( not (MemRD = "00000")) and not (ExWE ='1' and (not (ExRD = "00000"))) and ( not (ExRD = IdRT) ) and (MemRD = IdRT)) then
+elsif(MemWE = '1' and ( not (MemRD = "00000")) and not (ExWE and (not (ExRD = "00000"))) and ( not (ExRD = IdRT) ) and (MemRD = IdRT)) then
     ForwardB <= "01";
 else
   --No Hazard Detected

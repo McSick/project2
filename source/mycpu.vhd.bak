@@ -242,7 +242,7 @@ begin
     WriteDataReg2 <= Instruction_stg5(15 downto 0) & x"0000" when  '1', WriteDataReg when others;
 
   --with (HaltI or memwait) select
-  with (HaltI or Stall or PCSTALL or Rden or Wren) select
+  with (HaltI or Stall or PCSTALL or Rden) select
    NextPC <= PC when '1', AlmostPC when others;  
    
   with ((Branch AND zero_stg4) or (BNE AND (not zero_stg4))) select

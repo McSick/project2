@@ -4,7 +4,7 @@ USE ieee.std_logic_1164.all;
 
 entity MemControl is 
     port(
-
+		nReset : in std_logic;
         --IMemory
         PC : in std_logic_vector(31 downto 0);
         Instruction : out std_logic_vector(31 downto 0);
@@ -46,15 +46,15 @@ begin
 MemoryData <= q;
 Instruction <= q;
 wrenO <= wren;
-rdenO <= irden or rden;
-nextstatelogic : process(wren,rden,memstate)
+rdenO <= (irden or rden) and (not wren);
+nextstatelogic : process(wren,rden,memstate,nReset)
 begin
   stall <= '0';
   address <= PC(15 downto 0);
   data <= PC;
 
   
-  
+	if(nReset='1') then
     case memstate is
     when MEMFREE => 
       if(wren = '1' or rden ='1') then
@@ -73,7 +73,7 @@ begin
 
       end if; 
       stall <= '1';
-  when MEMACCESS =>
+	when MEMACCESS =>
       if(wren = '1' or rden ='1') then
           address <= Daddress (15 downto 0);
           data <= writeData;
@@ -85,11 +85,12 @@ begin
       address <= x"0000";
       data <= x"00000000";
     when OTHERS =>
+	
 
  
 end case;
 
-
+end if;
   
 end process;
 

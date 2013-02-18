@@ -4,12 +4,13 @@ use ieee.NUMERIC_STD.all;
 
 entity pipelinecontroller is
   port(
-    signal ExtType : out std_logic;
-    signal EXC : out std_logic_vector(4 downto 0);
-    signal MEMC : out std_logic_vector(4 downto 0);
-    signal WBC : out std_logic_vector(2 downto 0);
-  signal opcode :  in std_logic_vector(5 downto 0);
-  signal  funct :  in std_logic_vector(5 downto 0)
+		nReset : in std_logic;
+		ExtType : out std_logic;
+		EXC : out std_logic_vector(4 downto 0);
+		MEMC : out std_logic_vector(4 downto 0);
+		WBC : out std_logic_vector(2 downto 0);
+		opcode :  in std_logic_vector(5 downto 0);
+		funct :  in std_logic_vector(5 downto 0)
   );
 end pipelinecontroller;
 
@@ -17,8 +18,8 @@ architecture Behavioral of pipelinecontroller is
   
    
   signal WriteEnable :  std_logic;
-   signal RegDst :  std_logic;
-   signal AluSrc :  std_logic;
+  signal RegDst :  std_logic;
+  signal AluSrc :  std_logic;
   signal  ALU_cntrl :  std_logic_vector(2 downto 0);
   signal  MemWrite :  std_logic; 
   signal  MemOut :  std_logic;
@@ -34,8 +35,9 @@ begin
  EXC <= RegDst & AluSrc & ALU_cntrl;
  MEMC <= Branch & BNE &  MemWrite & MemRead & Jump;
  WBC <= WriteEnable & MemOut & LUI;
- OpSelect : process(opcode,funct)
+ OpSelect : process(opcode,funct,nReset)
  begin
+	if(nReset = '0') then
    --1 when signed
     ExtType <= '0';
     
@@ -61,7 +63,32 @@ begin
    LUI <= '0';
    --1 when writing reading from memory
     MemRead <= '0';
+	else
+    --1 when signed
+    ExtType <= '0';
     
+    --1 when write to Registerfile
+    WriteEnable <= '0';
+    --1 when using rd (r-type)
+    RegDst <= '1';
+    --1 when rd type
+    AluSrc <= '0';
+    --3 bit alu controler
+    ALU_cntrl <= "000";
+    --1 when writing to memory
+    MemWrite <= '0';
+    --0 when when memory is saved in register
+    MemOut <= '1';
+    --1 when branching
+    Branch <= '0';
+    --when when jumping
+    Jump <= '0';
+    --Branch when not equal
+    BNE <= '0';
+   --Load upper immediate
+   LUI <= '0';
+   --1 when writing reading from memory
+    MemRead <= '0';
       case opcode is
         --Special Function
         when  "000000" =>
@@ -187,6 +214,7 @@ begin
         
         
       end case;
+	end if;
     end process;
 
 end Behavioral;    

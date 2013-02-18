@@ -16,7 +16,8 @@ entity HazardDetector is
 end HazardDetector;
 
 architecture behavioral of HazardDetector is
-  TYPE STATE_TYPE IS (waiting ,stalling);
+  --Stalling2 is just added since no forwarding is implemented just yet.
+  TYPE STATE_TYPE IS (waiting ,stalling,stalling2);
   Signal state,nextstate : STATE_TYPE;
 begin
     
@@ -48,10 +49,17 @@ begin
     nextstate <= waiting;
   end if;
    when stalling =>
+   nextstate <= stalling2;
+   PCStall <= '1';
+   IFSTALL <= '1';
+   Hazard <= '1';
+   when stalling2  =>
    nextstate <= waiting;
    PCStall <= '0';
    IFSTALL <= '0';
+   Hazard <= '0';
    end case;
+ 
 end process;
     
 end behavioral;
